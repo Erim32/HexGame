@@ -1,0 +1,11 @@
+digraph "Traitement_C_client/Plateau" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b3fd26e009db904f40cb285f7e6a31b7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Traitement_C_client" fontname="Helvetica", fontsize="10", URL="dir_b3fd26e009db904f40cb285f7e6a31b7.html"]
+  dir_33542a2dc1710137920da69fd9005664 [shape=box, label="Plateau", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_33542a2dc1710137920da69fd9005664.html"];
+  }
+  dir_d8bc9e1305510eee409ed409211d2b87 [shape=box label="Groupe" fillcolor="white" style="filled" color="red" URL="dir_d8bc9e1305510eee409ed409211d2b87.html"];
+  dir_33542a2dc1710137920da69fd9005664->dir_d8bc9e1305510eee409ed409211d2b87 [headlabel="2", labeldistance=1.5 headhref="dir_000007_000001.html"];
+}

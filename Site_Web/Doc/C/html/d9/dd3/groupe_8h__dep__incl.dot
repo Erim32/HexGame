@@ -1,0 +1,14 @@
+digraph "Traitement_C_client/Groupe/groupe.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Traitement_C_client\l/Groupe/groupe.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Traitement_C_client\l/Groupe/groupe.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/db7/groupe_8c.html",tooltip="Fonctions pour la gestion du jeu sous forme de graphe +IA(+tard) "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Traitement_C_client\l/Groupe/IA.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d49/_i_a_8c.html",tooltip="Fonctions pour la gestion du jeu sous forme de graphe +IA(+tard) "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Traitement_C_client\l/Plateau/plateau.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d26/plateau_8h.html",tooltip="Fonctions pour la gestion du plateau de jeu. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Traitement_C_client\l/Inout/inout.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/dc7/inout_8h_source.html"];
+}

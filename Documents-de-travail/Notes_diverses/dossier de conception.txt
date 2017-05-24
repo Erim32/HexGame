@@ -1,0 +1,58 @@
+RECUPERER TOUT CE QU'IL Y A SUR LE GITLAB ET RAJOUTER DU BLABLA
+
+document interne qui va permettre de regler tout se qui concerne la programmation , les spécifications, les modules, langages, en général fait par le chef de projet, avec l equipe
+
+les programmeur vont devoir coder differents module a partir des spcifications
+
+
+En amont 
+-> programme , systeme machine
+
+Dossier de conception
+analyse du probleme
+->< structure de donnée, representation informatique.
+->structure du programme , analyse du cahier des charge, qu'est ce qu'il faut programmer?
+
+	- identification des parties, vos partie ajout, entre elles, des relations:
+		- partage de données variables  globales
+		- partage de sous programmes
+		- ...
+
+	Raffinement jusqu'au niveau des sous programmes et de leurs tests.
+HEX EN 
+Parties:
+	- affichage: 
+		- grille
+		- menu
+		-informations
+		-interactions
+	- gestion du jeu / sauvegarde
+
+
+	- gestion saubegarde / restauration
+
+
+
+
+-> plitique de test et validation
+	-> liste détaillé de test dans notre cas.
+
+
+
+Resume du 13/03/2017 : TOUT ce qu'on a deja fait
+c'est nuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuul
+
+test: initialiser la grille
+	  afficher la grille
+	  pp de test
+	  	remplir la grille
+	  	appeler afficher grille verifier
+	  	verifier
+
+
+	  fonctions
+	  -afficher
+	  -jeu
+	  sauvegarder
+	  recharger
+	  calcul pour groupe

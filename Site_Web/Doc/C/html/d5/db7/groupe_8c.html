@@ -1,0 +1,1229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>HexGame_C: Référence du fichier Traitement_C_client/Groupe/groupe.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../logo-200px.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">HexGame_C
+   </div>
+   <div id="projectbrief">Hex Game - Projet S4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="../../annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="../../globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_b3fd26e009db904f40cb285f7e6a31b7.html">Traitement_C_client</a></li><li class="navelem"><a class="el" href="../../dir_d8bc9e1305510eee409ed409211d2b87.html">Groupe</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier groupe.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions pour la gestion du jeu sous forme de graphe +IA(+tard)  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/da2/groupe_8h_source.html">groupe.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de groupe.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d9c/groupe_8c__incl.png" border="0" usemap="#_traitement___c__client_2_groupe_2groupe_8c" alt=""/></div>
+<map name="_traitement___c__client_2_groupe_2groupe_8c" id="_traitement___c__client_2_groupe_2groupe_8c">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d26/structte__groupe.html">te_groupe</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d0d/structte__ensemble.html">te_ensemble</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d08/structchemin.html">chemin</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a17ec419355cbd9bf5ba48fd956ceeac7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17ec419355cbd9bf5ba48fd956ceeac7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LARGMAX</b>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:a17ec419355cbd9bf5ba48fd956ceeac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b3f60030488d0cc41e615a02b81dab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85b3f60030488d0cc41e615a02b81dab"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LIENCASEDEB</b>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a85b3f60030488d0cc41e615a02b81dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:a104b0d4eac53cdb5fe9f60fb71d32377"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a104b0d4eac53cdb5fe9f60fb71d32377"></a>
+typedef struct <a class="el" href="../../d7/d26/structte__groupe.html">te_groupe</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unGroupe</b></td></tr>
+<tr class="separator:a104b0d4eac53cdb5fe9f60fb71d32377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62853ef5c7bd2bf179e28c7c848a1c3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62853ef5c7bd2bf179e28c7c848a1c3b"></a>
+typedef struct <a class="el" href="../../d1/d0d/structte__ensemble.html">te_ensemble</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lensemble</b></td></tr>
+<tr class="separator:a62853ef5c7bd2bf179e28c7c848a1c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2671d1550c16057a49533b026984e69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2671d1550c16057a49533b026984e69"></a>
+typedef struct <a class="el" href="../../d5/d08/structchemin.html">chemin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lechemin</b></td></tr>
+<tr class="separator:ad2671d1550c16057a49533b026984e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0d2b28a83cc32e3243a2930cad39a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e0d2b28a83cc32e3243a2930cad39a5"></a>
+typedef struct <a class="el" href="../../d5/d08/structchemin.html">chemin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>passage</b></td></tr>
+<tr class="separator:a2e0d2b28a83cc32e3243a2930cad39a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ad51c58fa88a9db5426d1fd15f7d92cc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#ad51c58fa88a9db5426d1fd15f7d92cc9">getCaseGroupe</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, int n)</td></tr>
+<tr class="memdesc:ad51c58fa88a9db5426d1fd15f7d92cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour un groupe de l'ensemble  <a href="#ad51c58fa88a9db5426d1fd15f7d92cc9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad51c58fa88a9db5426d1fd15f7d92cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989a6fb2a59bc466be6c4d653987e846"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a989a6fb2a59bc466be6c4d653987e846">getAfiliation</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, int n)</td></tr>
+<tr class="memdesc:a989a6fb2a59bc466be6c4d653987e846"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour l'afiliation de la case de l'ensemble  <a href="#a989a6fb2a59bc466be6c4d653987e846">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a989a6fb2a59bc466be6c4d653987e846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b26d8b4e6feb2613fff83d6ddd507b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#af4b26d8b4e6feb2613fff83d6ddd507b">getTailleEnsemble</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e)</td></tr>
+<tr class="memdesc:af4b26d8b4e6feb2613fff83d6ddd507b"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour la taille de l'ensemble  <a href="#af4b26d8b4e6feb2613fff83d6ddd507b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af4b26d8b4e6feb2613fff83d6ddd507b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546022c89da758b50d97107c9cff739a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a546022c89da758b50d97107c9cff739a">getCaseNum</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, int i)</td></tr>
+<tr class="memdesc:a546022c89da758b50d97107c9cff739a"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour le numero de la case de l'ensemble  <a href="#a546022c89da758b50d97107c9cff739a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a546022c89da758b50d97107c9cff739a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac398c2f7e4e592d7150044f0d323998d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac398c2f7e4e592d7150044f0d323998d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>groupeGagnant</b> (<a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a> c, int taille, char sens)</td></tr>
+<tr class="separator:ac398c2f7e4e592d7150044f0d323998d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98dc302e7ea0870b7326564bfa1ff86e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98dc302e7ea0870b7326564bfa1ff86e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>unGagant</b> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, int sens)</td></tr>
+<tr class="separator:a98dc302e7ea0870b7326564bfa1ff86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9452d011b4894b018e0002d94be5a0c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9452d011b4894b018e0002d94be5a0c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ajouterLien</b> (<a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a> c, unsigned short int i)</td></tr>
+<tr class="separator:a9452d011b4894b018e0002d94be5a0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03bd00d23c49a221b630d7419df36304"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03bd00d23c49a221b630d7419df36304"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>supprimerLien</b> (<a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a> c, unsigned short int i)</td></tr>
+<tr class="separator:a03bd00d23c49a221b630d7419df36304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16630389306487b38425de927b338c5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16630389306487b38425de927b338c5e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>souderGroupe</b> (<a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a> c1, <a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a> c2, <a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e)</td></tr>
+<tr class="separator:a16630389306487b38425de927b338c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbc0071baaa7426cd2db3e81a6d8693"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fbc0071baaa7426cd2db3e81a6d8693"></a>
+<a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a>&#160;</td><td class="memItemRight" valign="bottom"><b>creerCase</b> (unsigned short int n)</td></tr>
+<tr class="separator:a1fbc0071baaa7426cd2db3e81a6d8693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c43981411b7d1a32408377672e3f38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6c43981411b7d1a32408377672e3f38"></a>
+<a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a>&#160;</td><td class="memItemRight" valign="bottom"><b>copierCase</b> (<a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a> g)</td></tr>
+<tr class="separator:ab6c43981411b7d1a32408377672e3f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6237254b5afd8483ebb8a19532d0b882"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6237254b5afd8483ebb8a19532d0b882"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>freeCase</b> (<a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a> g)</td></tr>
+<tr class="separator:a6237254b5afd8483ebb8a19532d0b882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84bd97c22b65a2228be0c1f09fe2e65f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a84bd97c22b65a2228be0c1f09fe2e65f">jouerCoup</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, unsigned short int i, unsigned char afiliation, unsigned char sens)</td></tr>
+<tr class="memdesc:a84bd97c22b65a2228be0c1f09fe2e65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de jouer un coup dans l'ensemble  <a href="#a84bd97c22b65a2228be0c1f09fe2e65f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a84bd97c22b65a2228be0c1f09fe2e65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9342f78ccadd3c08551e5f3dc55a4f3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a9342f78ccadd3c08551e5f3dc55a4f3b">creerEnsemble</a> (int n)</td></tr>
+<tr class="memdesc:a9342f78ccadd3c08551e5f3dc55a4f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">crée l'ensemble de largeur n vierge de tout coups  <a href="#a9342f78ccadd3c08551e5f3dc55a4f3b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9342f78ccadd3c08551e5f3dc55a4f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd14cb80b217ff28945b5224dfb0d0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a1dd14cb80b217ff28945b5224dfb0d0e">chargerEnsemble</a> (int n, char *tab, char joueur1, char joueur2, unsigned char sensj1)</td></tr>
+<tr class="memdesc:a1dd14cb80b217ff28945b5224dfb0d0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">crée l'ensemble de largeur n à partir d'un tableau de coups  <a href="#a1dd14cb80b217ff28945b5224dfb0d0e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1dd14cb80b217ff28945b5224dfb0d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e69398d6f4fdc7af369bb4cc6ba64b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a3e69398d6f4fdc7af369bb4cc6ba64b6">copierEnsemble</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e)</td></tr>
+<tr class="memdesc:a3e69398d6f4fdc7af369bb4cc6ba64b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">copie l'ensemble en parametre  <a href="#a3e69398d6f4fdc7af369bb4cc6ba64b6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3e69398d6f4fdc7af369bb4cc6ba64b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e7a13f0c67ef8a8905d5bffe50d558"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a83e7a13f0c67ef8a8905d5bffe50d558">suprimmerEnsemble</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e)</td></tr>
+<tr class="memdesc:a83e7a13f0c67ef8a8905d5bffe50d558"><td class="mdescLeft">&#160;</td><td class="mdescRight">supprime l'ensemble de maniere propre,bug noté  <a href="#a83e7a13f0c67ef8a8905d5bffe50d558">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a83e7a13f0c67ef8a8905d5bffe50d558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0429db44ab39a70557c1438b27b590bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a0429db44ab39a70557c1438b27b590bb">getTaillePassage</a> (<a class="el" href="../../d5/d08/structchemin.html">passage</a> p)</td></tr>
+<tr class="memdesc:a0429db44ab39a70557c1438b27b590bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour la taille d'un passage  <a href="#a0429db44ab39a70557c1438b27b590bb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0429db44ab39a70557c1438b27b590bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55bb5dfcbaa0bbcfaf2a9ebb3257a591"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a55bb5dfcbaa0bbcfaf2a9ebb3257a591">setTaillePassage</a> (<a class="el" href="../../d5/d08/structchemin.html">passage</a> p, int i)</td></tr>
+<tr class="memdesc:a55bb5dfcbaa0bbcfaf2a9ebb3257a591"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter pour la taille d'un passage  <a href="#a55bb5dfcbaa0bbcfaf2a9ebb3257a591">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a55bb5dfcbaa0bbcfaf2a9ebb3257a591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b391f74e7499b89268e618e69f1200"><td class="memItemLeft" align="right" valign="top">unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#ae1b391f74e7499b89268e618e69f1200">getNCasePassage</a> (<a class="el" href="../../d5/d08/structchemin.html">passage</a> p)</td></tr>
+<tr class="memdesc:ae1b391f74e7499b89268e618e69f1200"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour la case du passage  <a href="#ae1b391f74e7499b89268e618e69f1200">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae1b391f74e7499b89268e618e69f1200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc465b84b3321b882cb1298b986f1097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#afc465b84b3321b882cb1298b986f1097">setNCasePassage</a> (<a class="el" href="../../d5/d08/structchemin.html">passage</a> p, unsigned short int i)</td></tr>
+<tr class="memdesc:afc465b84b3321b882cb1298b986f1097"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter pour la case du passage  <a href="#afc465b84b3321b882cb1298b986f1097">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afc465b84b3321b882cb1298b986f1097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a93cf4c40203e29a203895e0ee2f20"><td class="memItemLeft" align="right" valign="top">unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a49a93cf4c40203e29a203895e0ee2f20">getProfond</a> (<a class="el" href="../../d5/d08/structchemin.html">passage</a> p, int n)</td></tr>
+<tr class="memdesc:a49a93cf4c40203e29a203895e0ee2f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour la case du passage en profondeur  <a href="#a49a93cf4c40203e29a203895e0ee2f20">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a49a93cf4c40203e29a203895e0ee2f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0b0d0b4ca06c7be096f6a60eff7dfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#aac0b0d0b4ca06c7be096f6a60eff7dfa">getBeginPassage</a> (<a class="el" href="../../d5/d08/structchemin.html">passage</a> p)</td></tr>
+<tr class="memdesc:aac0b0d0b4ca06c7be096f6a60eff7dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour le passage a l'origine du passage  <a href="#aac0b0d0b4ca06c7be096f6a60eff7dfa">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aac0b0d0b4ca06c7be096f6a60eff7dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2761b8a2c5a5db0af622bc8b04fcb2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#ad2761b8a2c5a5db0af622bc8b04fcb2b">setBeginPassage</a> (<a class="el" href="../../d5/d08/structchemin.html">passage</a> p, <a class="el" href="../../d5/d08/structchemin.html">passage</a> b)</td></tr>
+<tr class="memdesc:ad2761b8a2c5a5db0af622bc8b04fcb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter pour le passage a l'origine du passage  <a href="#ad2761b8a2c5a5db0af622bc8b04fcb2b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad2761b8a2c5a5db0af622bc8b04fcb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651e2682e098907d88e5b32cef8de622"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a651e2682e098907d88e5b32cef8de622">creeCheminBase</a> (unsigned short int num)</td></tr>
+<tr class="memdesc:a651e2682e098907d88e5b32cef8de622"><td class="mdescLeft">&#160;</td><td class="mdescRight">crée un chemin  <a href="#a651e2682e098907d88e5b32cef8de622">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a651e2682e098907d88e5b32cef8de622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f8b4a22f4cb8659152e1136ca00e81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a17f8b4a22f4cb8659152e1136ca00e81">ajouter</a> (<a class="el" href="../../d5/d08/structchemin.html">passage</a> p, unsigned short int num)</td></tr>
+<tr class="memdesc:a17f8b4a22f4cb8659152e1136ca00e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajoute un chemin menant au chemin  <a href="#a17f8b4a22f4cb8659152e1136ca00e81">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a17f8b4a22f4cb8659152e1136ca00e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989417c7f9b357feda975aee5f67d63d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a989417c7f9b357feda975aee5f67d63d">affichePassage</a> (<a class="el" href="../../d5/d08/structchemin.html">passage</a> p)</td></tr>
+<tr class="memdesc:a989417c7f9b357feda975aee5f67d63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche l'ensemble du chemin passé  <a href="#a989417c7f9b357feda975aee5f67d63d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a989417c7f9b357feda975aee5f67d63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357d3eab5255f125bd6e251b563713d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a357d3eab5255f125bd6e251b563713d9">recherchePont</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, unsigned short int case1, unsigned short int case2, unsigned char afiliation)</td></tr>
+<tr class="memdesc:a357d3eab5255f125bd6e251b563713d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">cherche la presence d'un pont en tre deux cases  <a href="#a357d3eab5255f125bd6e251b563713d9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a357d3eab5255f125bd6e251b563713d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a2af82c1eeaddd0497f1862f7bdba1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#aa6a2af82c1eeaddd0497f1862f7bdba1">IAdePont</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, unsigned char afiliation, unsigned char sens)</td></tr>
+<tr class="memdesc:aa6a2af82c1eeaddd0497f1862f7bdba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">recherche de la case à jouer grace à au plus cours chemin du joueur et un étude des ponts  <a href="#aa6a2af82c1eeaddd0497f1862f7bdba1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa6a2af82c1eeaddd0497f1862f7bdba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a07ca11bbf1edfbcbbf452eb8c36b49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a3a07ca11bbf1edfbcbbf452eb8c36b49">lePlusCourt</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, unsigned char afiliation, unsigned char sens)</td></tr>
+<tr class="memdesc:a3a07ca11bbf1edfbcbbf452eb8c36b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">cherche le chemin le plus cours  <a href="#a3a07ca11bbf1edfbcbbf452eb8c36b49">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3a07ca11bbf1edfbcbbf452eb8c36b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83577201cefc11d76dfdef81d60c84ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a83577201cefc11d76dfdef81d60c84ad">IasimpleChemin</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, unsigned char afiliation, unsigned char afiautre, unsigned char sens)</td></tr>
+<tr class="memdesc:a83577201cefc11d76dfdef81d60c84ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">recherche de la case à jouer grace à l'intercection des chemins les plus cours des deux joueurs  <a href="#a83577201cefc11d76dfdef81d60c84ad">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a83577201cefc11d76dfdef81d60c84ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9729960973a4b6f2de631fa65f337fa8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a9729960973a4b6f2de631fa65f337fa8">evalEnsembleChemin</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, unsigned char afiliation, unsigned char afiautre, unsigned char sens)</td></tr>
+<tr class="memdesc:a9729960973a4b6f2de631fa65f337fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction d'evaluation de la valeur de l'ensemble pour la victoire d'un joueur  <a href="#a9729960973a4b6f2de631fa65f337fa8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9729960973a4b6f2de631fa65f337fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9281ab86627dcec7e1fa695d3a1850b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9281ab86627dcec7e1fa695d3a1850b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>minMax</b> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, unsigned char j, unsigned char jsec, unsigned char sens, unsigned char jchercheG)</td></tr>
+<tr class="separator:ac9281ab86627dcec7e1fa695d3a1850b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51032bd4b2a321655a5937a26817854"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa51032bd4b2a321655a5937a26817854"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>joueAlea</b> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e)</td></tr>
+<tr class="separator:aa51032bd4b2a321655a5937a26817854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565c1677c9341ec81a3c878ffbf86276"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a565c1677c9341ec81a3c878ffbf86276">JoueIAj1miniMax</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e, unsigned char j, unsigned char jsec, unsigned char sens)</td></tr>
+<tr class="memdesc:a565c1677c9341ec81a3c878ffbf86276"><td class="mdescLeft">&#160;</td><td class="mdescRight">recherche de la case à jouer par le parcours de l'arbre des possibles  <a href="#a565c1677c9341ec81a3c878ffbf86276">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a565c1677c9341ec81a3c878ffbf86276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d804ce65f98af46a92465c0f320a53c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a5d804ce65f98af46a92465c0f320a53c">affichegroupe</a> (<a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a> p)</td></tr>
+<tr class="memdesc:a5d804ce65f98af46a92465c0f320a53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche les caracteristiques du groupe  <a href="#a5d804ce65f98af46a92465c0f320a53c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5d804ce65f98af46a92465c0f320a53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de4ccb8a7fad01f71de64dfd1830932"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/groupe_8c.html#a5de4ccb8a7fad01f71de64dfd1830932">afficherTot</a> (<a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> e)</td></tr>
+<tr class="memdesc:a5de4ccb8a7fad01f71de64dfd1830932"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche les caracteristiques des groupes de l'ensemble  <a href="#a5de4ccb8a7fad01f71de64dfd1830932">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5de4ccb8a7fad01f71de64dfd1830932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aaa0b398b06d1c606fcc60930ec23f2a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa0b398b06d1c606fcc60930ec23f2a4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>chronoLance</b> = false</td></tr>
+<tr class="separator:aaa0b398b06d1c606fcc60930ec23f2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions pour la gestion du jeu sous forme de graphe +IA(+tard) </p>
+<dl class="section author"><dt>Auteur</dt><dd>Mathieu Popquillon </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>14 mai 2017 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a5d804ce65f98af46a92465c0f320a53c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affichegroupe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>affiche les caracteristiques du groupe </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">groupee</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a989417c7f9b357feda975aee5f67d63d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affichePassage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>affiche l'ensemble du chemin passé </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">passage</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5de4ccb8a7fad01f71de64dfd1830932"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherTot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>affiche les caracteristiques des groupes de l'ensemble </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a17f8b4a22f4cb8659152e1136ca00e81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d08/structchemin.html">passage</a> ajouter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short int&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ajoute un chemin menant au chemin </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unsigned</td><td>short int la case du nouveau passage </td></tr>
+    <tr><td class="paramname">passage</td><td>origine </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le passage créé </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1dd14cb80b217ff28945b5224dfb0d0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> chargerEnsemble </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>joueur1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>joueur2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sensj1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>crée l'ensemble de largeur n à partir d'un tableau de coups </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">int</td><td>la largeur de l'ensemble </td></tr>
+    <tr><td class="paramname">char</td><td>* le tableau des coups </td></tr>
+    <tr><td class="paramname">char</td><td>joueur1 couleur du joueur 1 </td></tr>
+    <tr><td class="paramname">char</td><td>joueur2 couleur du joueur 2 </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char le sens dans lequel joue le joueur 1 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>ensemble </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3e69398d6f4fdc7af369bb4cc6ba64b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> copierEnsemble </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>copie l'ensemble en parametre </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td>l'ensemble à copier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>ensemble copie </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a651e2682e098907d88e5b32cef8de622"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d08/structchemin.html">passage</a> creeCheminBase </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short int&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>crée un chemin </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unsigned</td><td>short int la case du passage </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le passage créé </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9342f78ccadd3c08551e5f3dc55a4f3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a> creerEnsemble </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>crée l'ensemble de largeur n vierge de tout coups </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">int</td><td>la largeur de l'ensemble </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>ensemble </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9729960973a4b6f2de631fa65f337fa8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int evalEnsembleChemin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>afiliation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>afiautre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sens</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>fonction d'evaluation de la valeur de l'ensemble pour la victoire d'un joueur </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td>l'ensemble concerné </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char la couleur du joueur </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char la couleur de son adversaire </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char le sens du joueur pour gagner </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la valeur estimer du plateau </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a989a6fb2a59bc466be6c4d653987e846"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char getAfiliation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour l'afiliation de la case de l'ensemble </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td></td></tr>
+    <tr><td class="paramname">integer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le joueur possadant le groupe de num (integer) dans (ensemble) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aac0b0d0b4ca06c7be096f6a60eff7dfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d08/structchemin.html">passage</a> getBeginPassage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour le passage a l'origine du passage </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">passage</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>(passage) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad51c58fa88a9db5426d1fd15f7d92cc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/da2/groupe_8h.html#af0a904698ccc1020e44b1b2afc0e790c">groupe</a> getCaseGroupe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour un groupe de l'ensemble </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td></td></tr>
+    <tr><td class="paramname">integer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le groupe de num (integer) dans (ensemble) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a546022c89da758b50d97107c9cff739a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getCaseNum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour le numero de la case de l'ensemble </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">integer</td><td></td></tr>
+    <tr><td class="paramname">ensemble</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>(integer) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1b391f74e7499b89268e618e69f1200"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short int getNCasePassage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour la case du passage </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">passage</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>(unsigned short integer) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a49a93cf4c40203e29a203895e0ee2f20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short int getProfond </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour la case du passage en profondeur </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">passage</td><td></td></tr>
+    <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>(unsigned short integer) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af4b26d8b4e6feb2613fff83d6ddd507b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getTailleEnsemble </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour la taille de l'ensemble </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la taille de(ensemble) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0429db44ab39a70557c1438b27b590bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getTaillePassage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour la taille d'un passage </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">passage</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>(integer) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa6a2af82c1eeaddd0497f1862f7bdba1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IAdePont </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>afiliation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sens</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recherche de la case à jouer grace à au plus cours chemin du joueur et un étude des ponts </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td>l'ensemble concerné </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char la couleur du joueur </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char le sens du joueur pour gagner </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le numero de la case à jouer </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a83577201cefc11d76dfdef81d60c84ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IasimpleChemin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>afiliation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>afiautre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sens</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recherche de la case à jouer grace à l'intercection des chemins les plus cours des deux joueurs </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td>l'ensemble concerné </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char la couleur du joueur </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char la couleur de son adversaire </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char le sens du joueur pour gagner </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le numero de la case à jouer </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a565c1677c9341ec81a3c878ffbf86276"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JoueIAj1miniMax </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>jsec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sens</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recherche de la case à jouer par le parcours de l'arbre des possibles </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td>l'ensemble concerné </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char la couleur du joueur </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char la couleur de son adversaire </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char le sens du joueur pour gagner </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le numero de la case à jouer </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a84bd97c22b65a2228be0c1f09fe2e65f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jouerCoup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>afiliation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sens</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>permet de jouer un coup dans l'ensemble </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td>sur lequel jouer </td></tr>
+    <tr><td class="paramname">unsigned</td><td>short int le numero de la case ou l'on joue </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char la couleur du joueur </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char le sens dans il doit gagner </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>bool le coups est gagnant </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3a07ca11bbf1edfbcbbf452eb8c36b49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d08/structchemin.html">passage</a> lePlusCourt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>afiliation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sens</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cherche le chemin le plus cours </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td>l'ensemble concerné </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char la couleur du joueur </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char le sens du joueur pour gagner </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le chemin le plus cours </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a357d3eab5255f125bd6e251b563713d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool recherchePont </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short int&#160;</td>
+          <td class="paramname"><em>case1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short int&#160;</td>
+          <td class="paramname"><em>case2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>afiliation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cherche la presence d'un pont en tre deux cases </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td>l'ensemble concerné </td></tr>
+    <tr><td class="paramname">unsigned</td><td>short int la case1 </td></tr>
+    <tr><td class="paramname">unsigned</td><td>short int la case2 </td></tr>
+    <tr><td class="paramname">unsigned</td><td>char la couleur du joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>si il y a un pont entre les deux cases </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad2761b8a2c5a5db0af622bc8b04fcb2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setBeginPassage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setter pour le passage a l'origine du passage </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">passage</td><td></td></tr>
+    <tr><td class="paramname">passage2</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afc465b84b3321b882cb1298b986f1097"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setNCasePassage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setter pour la case du passage </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">passage</td><td></td></tr>
+    <tr><td class="paramname">unsigned</td><td>short int </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a55bb5dfcbaa0bbcfaf2a9ebb3257a591"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTaillePassage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d08/structchemin.html">passage</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setter pour la taille d'un passage </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">passage</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a83e7a13f0c67ef8a8905d5bffe50d558"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void suprimmerEnsemble </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da2/groupe_8h.html#a56928d429399ca3112579f4f3093898a">ensemble</a>&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>supprime l'ensemble de maniere propre,bug noté </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ensemble</td><td>l'ensemble à supprimer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

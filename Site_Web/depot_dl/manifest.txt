@@ -1,0 +1,7 @@
+#un coommentaire
+Version 0.0.3
+#liste  des fichiers
+@Client_jeu_hex.jar
+@lib/AbsoluteLayout.jar
+@musiques/musique.wav
+@lib/beansbinding-1.2.1.jar

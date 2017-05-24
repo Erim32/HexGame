@@ -1,0 +1,29 @@
+Dans le .c
+typedef struct etPlateau{
+	char * grille;
+	int N;
+}plateauInt;
+
+Dans le .h
+typedef struct etPlateau * plateau
+
+Constructeurs:
+creerPlateau : N -> Plateau
+placerPion: i, j, couleur, Plateau -> Plateau
+
+Autres:
+vainqueur: Plateau -> Boolean
+caseVide i, j, ,Plateau -> Boolean
+jouer: Plateau, couleur, i, j -> Plateau
+initialiserPlateau: _ -> Plateau
+
+Precondition:
+placerPion(i,j,*,P) => caseVide(i,j,P)
+
+Precondition:
+vainqueur(creerPlateau(N)) => false
+vainqueur(placerPion(P,*,i,j)) => true si plateau plein ou groupe ok
+								  false sinon
+caseVide(creerPlateau(N)) => true
+jouer(creerPlateau(N),*,i,j)) => jouer(P,*,i,j)
+jouer(placerPion(i,j,*,P),*,i,j) => placerPion(i,j,*,jouer(P,*,i,j)) 

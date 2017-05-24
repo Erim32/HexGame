@@ -1,0 +1,737 @@
+\hypertarget{groupe_8c}{}\section{Traitement\+\_\+\+C\+\_\+client/\+Groupe/groupe.c File Reference}
+\label{groupe_8c}\index{Traitement\+\_\+\+C\+\_\+client/\+Groupe/groupe.\+c@{Traitement\+\_\+\+C\+\_\+client/\+Groupe/groupe.\+c}}
+
+
+Fonctions pour la gestion du jeu sous forme de graphe +\+IA(+tard)  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}groupe.\+h\char`\"{}}\\*
+Include dependency graph for groupe.\+c\+:
+% FIG 0
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structte__groupe}{te\+\_\+groupe}
+\item 
+struct \hyperlink{structte__ensemble}{te\+\_\+ensemble}
+\item 
+struct \hyperlink{structchemin}{chemin}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries L\+A\+R\+G\+M\+AX}~20\hypertarget{groupe_8c_a17ec419355cbd9bf5ba48fd956ceeac7}{}\label{groupe_8c_a17ec419355cbd9bf5ba48fd956ceeac7}
+
+\item 
+\#define {\bfseries L\+I\+E\+N\+C\+A\+S\+E\+D\+EB}~6\hypertarget{groupe_8c_a85b3f60030488d0cc41e615a02b81dab}{}\label{groupe_8c_a85b3f60030488d0cc41e615a02b81dab}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structte__groupe}{te\+\_\+groupe} {\bfseries un\+Groupe}\hypertarget{groupe_8c_a104b0d4eac53cdb5fe9f60fb71d32377}{}\label{groupe_8c_a104b0d4eac53cdb5fe9f60fb71d32377}
+
+\item 
+typedef struct \hyperlink{structte__ensemble}{te\+\_\+ensemble} {\bfseries lensemble}\hypertarget{groupe_8c_a62853ef5c7bd2bf179e28c7c848a1c3b}{}\label{groupe_8c_a62853ef5c7bd2bf179e28c7c848a1c3b}
+
+\item 
+typedef struct \hyperlink{structchemin}{chemin} {\bfseries lechemin}\hypertarget{groupe_8c_ad2671d1550c16057a49533b026984e69}{}\label{groupe_8c_ad2671d1550c16057a49533b026984e69}
+
+\item 
+typedef struct \hyperlink{structchemin}{chemin} $\ast$ {\bfseries passage}\hypertarget{groupe_8c_a2e0d2b28a83cc32e3243a2930cad39a5}{}\label{groupe_8c_a2e0d2b28a83cc32e3243a2930cad39a5}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{groupe_8h_af0a904698ccc1020e44b1b2afc0e790c}{groupe} \hyperlink{groupe_8c_ad51c58fa88a9db5426d1fd15f7d92cc9}{get\+Case\+Groupe} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, int n)
+\begin{DoxyCompactList}\small\item\em getter pour un groupe de l\textquotesingle{}ensemble \end{DoxyCompactList}\item 
+char \hyperlink{groupe_8c_a989a6fb2a59bc466be6c4d653987e846}{get\+Afiliation} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, int n)
+\begin{DoxyCompactList}\small\item\em getter pour l\textquotesingle{}afiliation de la case de l\textquotesingle{}ensemble \end{DoxyCompactList}\item 
+int \hyperlink{groupe_8c_af4b26d8b4e6feb2613fff83d6ddd507b}{get\+Taille\+Ensemble} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e)
+\begin{DoxyCompactList}\small\item\em getter pour la taille de l\textquotesingle{}ensemble \end{DoxyCompactList}\item 
+int \hyperlink{groupe_8c_a546022c89da758b50d97107c9cff739a}{get\+Case\+Num} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, int i)
+\begin{DoxyCompactList}\small\item\em getter pour le numero de la case de l\textquotesingle{}ensemble \end{DoxyCompactList}\item 
+bool {\bfseries groupe\+Gagnant} (\hyperlink{groupe_8h_af0a904698ccc1020e44b1b2afc0e790c}{groupe} c, int taille, char sens)\hypertarget{groupe_8c_ac398c2f7e4e592d7150044f0d323998d}{}\label{groupe_8c_ac398c2f7e4e592d7150044f0d323998d}
+
+\item 
+int {\bfseries un\+Gagant} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, int sens)\hypertarget{groupe_8c_a98dc302e7ea0870b7326564bfa1ff86e}{}\label{groupe_8c_a98dc302e7ea0870b7326564bfa1ff86e}
+
+\item 
+void {\bfseries ajouter\+Lien} (\hyperlink{groupe_8h_af0a904698ccc1020e44b1b2afc0e790c}{groupe} c, unsigned short int i)\hypertarget{groupe_8c_a9452d011b4894b018e0002d94be5a0c5}{}\label{groupe_8c_a9452d011b4894b018e0002d94be5a0c5}
+
+\item 
+void {\bfseries supprimer\+Lien} (\hyperlink{groupe_8h_af0a904698ccc1020e44b1b2afc0e790c}{groupe} c, unsigned short int i)\hypertarget{groupe_8c_a03bd00d23c49a221b630d7419df36304}{}\label{groupe_8c_a03bd00d23c49a221b630d7419df36304}
+
+\item 
+void {\bfseries souder\+Groupe} (\hyperlink{groupe_8h_af0a904698ccc1020e44b1b2afc0e790c}{groupe} c1, \hyperlink{groupe_8h_af0a904698ccc1020e44b1b2afc0e790c}{groupe} c2, \hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e)\hypertarget{groupe_8c_a16630389306487b38425de927b338c5e}{}\label{groupe_8c_a16630389306487b38425de927b338c5e}
+
+\item 
+\hyperlink{groupe_8h_af0a904698ccc1020e44b1b2afc0e790c}{groupe} {\bfseries creer\+Case} (unsigned short int n)\hypertarget{groupe_8c_a1fbc0071baaa7426cd2db3e81a6d8693}{}\label{groupe_8c_a1fbc0071baaa7426cd2db3e81a6d8693}
+
+\item 
+\hyperlink{groupe_8h_af0a904698ccc1020e44b1b2afc0e790c}{groupe} {\bfseries copier\+Case} (\hyperlink{groupe_8h_af0a904698ccc1020e44b1b2afc0e790c}{groupe} g)\hypertarget{groupe_8c_ab6c43981411b7d1a32408377672e3f38}{}\label{groupe_8c_ab6c43981411b7d1a32408377672e3f38}
+
+\item 
+void {\bfseries free\+Case} (\hyperlink{groupe_8h_af0a904698ccc1020e44b1b2afc0e790c}{groupe} g)\hypertarget{groupe_8c_a6237254b5afd8483ebb8a19532d0b882}{}\label{groupe_8c_a6237254b5afd8483ebb8a19532d0b882}
+
+\item 
+bool \hyperlink{groupe_8c_a84bd97c22b65a2228be0c1f09fe2e65f}{jouer\+Coup} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, unsigned short int i, unsigned char afiliation, unsigned char sens)
+\begin{DoxyCompactList}\small\item\em permet de jouer un coup dans l\textquotesingle{}ensemble \end{DoxyCompactList}\item 
+\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} \hyperlink{groupe_8c_a9342f78ccadd3c08551e5f3dc55a4f3b}{creer\+Ensemble} (int n)
+\begin{DoxyCompactList}\small\item\em crée l\textquotesingle{}ensemble de largeur n vierge de tout coups \end{DoxyCompactList}\item 
+\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} \hyperlink{groupe_8c_a1dd14cb80b217ff28945b5224dfb0d0e}{charger\+Ensemble} (int n, char $\ast$tab, char joueur1, char joueur2, unsigned char sensj1)
+\begin{DoxyCompactList}\small\item\em crée l\textquotesingle{}ensemble de largeur n à partir d\textquotesingle{}un tableau de coups \end{DoxyCompactList}\item 
+\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} \hyperlink{groupe_8c_a3e69398d6f4fdc7af369bb4cc6ba64b6}{copier\+Ensemble} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e)
+\begin{DoxyCompactList}\small\item\em copie l\textquotesingle{}ensemble en parametre \end{DoxyCompactList}\item 
+void \hyperlink{groupe_8c_a83e7a13f0c67ef8a8905d5bffe50d558}{suprimmer\+Ensemble} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e)
+\begin{DoxyCompactList}\small\item\em supprime l\textquotesingle{}ensemble de maniere propre,bug noté \end{DoxyCompactList}\item 
+int \hyperlink{groupe_8c_a0429db44ab39a70557c1438b27b590bb}{get\+Taille\+Passage} (\hyperlink{structchemin}{passage} p)
+\begin{DoxyCompactList}\small\item\em getter pour la taille d\textquotesingle{}un passage \end{DoxyCompactList}\item 
+void \hyperlink{groupe_8c_a55bb5dfcbaa0bbcfaf2a9ebb3257a591}{set\+Taille\+Passage} (\hyperlink{structchemin}{passage} p, int i)
+\begin{DoxyCompactList}\small\item\em setter pour la taille d\textquotesingle{}un passage \end{DoxyCompactList}\item 
+unsigned short int \hyperlink{groupe_8c_ae1b391f74e7499b89268e618e69f1200}{get\+N\+Case\+Passage} (\hyperlink{structchemin}{passage} p)
+\begin{DoxyCompactList}\small\item\em getter pour la case du passage \end{DoxyCompactList}\item 
+void \hyperlink{groupe_8c_afc465b84b3321b882cb1298b986f1097}{set\+N\+Case\+Passage} (\hyperlink{structchemin}{passage} p, unsigned short int i)
+\begin{DoxyCompactList}\small\item\em setter pour la case du passage \end{DoxyCompactList}\item 
+unsigned short int \hyperlink{groupe_8c_a49a93cf4c40203e29a203895e0ee2f20}{get\+Profond} (\hyperlink{structchemin}{passage} p, int n)
+\begin{DoxyCompactList}\small\item\em getter pour la case du passage en profondeur \end{DoxyCompactList}\item 
+\hyperlink{structchemin}{passage} \hyperlink{groupe_8c_aac0b0d0b4ca06c7be096f6a60eff7dfa}{get\+Begin\+Passage} (\hyperlink{structchemin}{passage} p)
+\begin{DoxyCompactList}\small\item\em getter pour le passage a l\textquotesingle{}origine du passage \end{DoxyCompactList}\item 
+void \hyperlink{groupe_8c_ad2761b8a2c5a5db0af622bc8b04fcb2b}{set\+Begin\+Passage} (\hyperlink{structchemin}{passage} p, \hyperlink{structchemin}{passage} b)
+\begin{DoxyCompactList}\small\item\em setter pour le passage a l\textquotesingle{}origine du passage \end{DoxyCompactList}\item 
+\hyperlink{structchemin}{passage} \hyperlink{groupe_8c_a651e2682e098907d88e5b32cef8de622}{cree\+Chemin\+Base} (unsigned short int num)
+\begin{DoxyCompactList}\small\item\em crée un chemin \end{DoxyCompactList}\item 
+\hyperlink{structchemin}{passage} \hyperlink{groupe_8c_a17f8b4a22f4cb8659152e1136ca00e81}{ajouter} (\hyperlink{structchemin}{passage} p, unsigned short int num)
+\begin{DoxyCompactList}\small\item\em ajoute un chemin menant au chemin \end{DoxyCompactList}\item 
+void \hyperlink{groupe_8c_a989417c7f9b357feda975aee5f67d63d}{affiche\+Passage} (\hyperlink{structchemin}{passage} p)
+\begin{DoxyCompactList}\small\item\em affiche l\textquotesingle{}ensemble du chemin passé \end{DoxyCompactList}\item 
+bool \hyperlink{groupe_8c_a357d3eab5255f125bd6e251b563713d9}{recherche\+Pont} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, unsigned short int case1, unsigned short int case2, unsigned char afiliation)
+\begin{DoxyCompactList}\small\item\em cherche la presence d\textquotesingle{}un pont en tre deux cases \end{DoxyCompactList}\item 
+int \hyperlink{groupe_8c_aa6a2af82c1eeaddd0497f1862f7bdba1}{I\+Ade\+Pont} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, unsigned char afiliation, unsigned char sens)
+\begin{DoxyCompactList}\small\item\em recherche de la case à jouer grace à au plus cours chemin du joueur et un étude des ponts \end{DoxyCompactList}\item 
+\hyperlink{structchemin}{passage} \hyperlink{groupe_8c_a3a07ca11bbf1edfbcbbf452eb8c36b49}{le\+Plus\+Court} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, unsigned char afiliation, unsigned char sens)
+\begin{DoxyCompactList}\small\item\em cherche le chemin le plus cours \end{DoxyCompactList}\item 
+int \hyperlink{groupe_8c_a83577201cefc11d76dfdef81d60c84ad}{Iasimple\+Chemin} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, unsigned char afiliation, unsigned char afiautre, unsigned char sens)
+\begin{DoxyCompactList}\small\item\em recherche de la case à jouer grace à l\textquotesingle{}intercection des chemins les plus cours des deux joueurs \end{DoxyCompactList}\item 
+int \hyperlink{groupe_8c_a9729960973a4b6f2de631fa65f337fa8}{eval\+Ensemble\+Chemin} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, unsigned char afiliation, unsigned char afiautre, unsigned char sens)
+\begin{DoxyCompactList}\small\item\em fonction d\textquotesingle{}evaluation de la valeur de l\textquotesingle{}ensemble pour la victoire d\textquotesingle{}un joueur \end{DoxyCompactList}\item 
+int {\bfseries min\+Max} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, unsigned char j, unsigned char jsec, unsigned char sens, unsigned char jchercheG)\hypertarget{groupe_8c_ac9281ab86627dcec7e1fa695d3a1850b}{}\label{groupe_8c_ac9281ab86627dcec7e1fa695d3a1850b}
+
+\item 
+int {\bfseries joue\+Alea} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e)\hypertarget{groupe_8c_aa51032bd4b2a321655a5937a26817854}{}\label{groupe_8c_aa51032bd4b2a321655a5937a26817854}
+
+\item 
+int \hyperlink{groupe_8c_a565c1677c9341ec81a3c878ffbf86276}{Joue\+I\+Aj1mini\+Max} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, unsigned char j, unsigned char jsec, unsigned char sens)
+\begin{DoxyCompactList}\small\item\em recherche de la case à jouer par le parcours de l\textquotesingle{}arbre des possibles \end{DoxyCompactList}\item 
+void \hyperlink{groupe_8c_a5d804ce65f98af46a92465c0f320a53c}{affichegroupe} (\hyperlink{groupe_8h_af0a904698ccc1020e44b1b2afc0e790c}{groupe} p)
+\begin{DoxyCompactList}\small\item\em affiche les caracteristiques du groupe \end{DoxyCompactList}\item 
+void \hyperlink{groupe_8c_a5de4ccb8a7fad01f71de64dfd1830932}{afficher\+Tot} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e)
+\begin{DoxyCompactList}\small\item\em affiche les caracteristiques des groupes de l\textquotesingle{}ensemble \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries chrono\+Lance} = false\hypertarget{groupe_8c_aaa0b398b06d1c606fcc60930ec23f2a4}{}\label{groupe_8c_aaa0b398b06d1c606fcc60930ec23f2a4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fonctions pour la gestion du jeu sous forme de graphe +\+IA(+tard) 
+
+\begin{DoxyAuthor}{Author}
+Mathieu Popquillon 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14 mai 2017 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{groupe.\+c@{groupe.\+c}!affichegroupe@{affichegroupe}}
+\index{affichegroupe@{affichegroupe}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{affichegroupe(groupe p)}{affichegroupe(groupe p)}}]{\setlength{\rightskip}{0pt plus 5cm}void affichegroupe (
+\begin{DoxyParamCaption}
+\item[{{\bf groupe}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a5d804ce65f98af46a92465c0f320a53c}{}\label{groupe_8c_a5d804ce65f98af46a92465c0f320a53c}
+
+
+affiche les caracteristiques du groupe 
+
+
+\begin{DoxyParams}{Parameters}
+{\em groupee} & \\
+\hline
+\end{DoxyParams}
+\index{groupe.\+c@{groupe.\+c}!affiche\+Passage@{affiche\+Passage}}
+\index{affiche\+Passage@{affiche\+Passage}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{affiche\+Passage(passage p)}{affichePassage(passage p)}}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\+Passage (
+\begin{DoxyParamCaption}
+\item[{{\bf passage}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a989417c7f9b357feda975aee5f67d63d}{}\label{groupe_8c_a989417c7f9b357feda975aee5f67d63d}
+
+
+affiche l\textquotesingle{}ensemble du chemin passé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em passage} & \\
+\hline
+\end{DoxyParams}
+\index{groupe.\+c@{groupe.\+c}!afficher\+Tot@{afficher\+Tot}}
+\index{afficher\+Tot@{afficher\+Tot}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{afficher\+Tot(ensemble e)}{afficherTot(ensemble e)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\+Tot (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a5de4ccb8a7fad01f71de64dfd1830932}{}\label{groupe_8c_a5de4ccb8a7fad01f71de64dfd1830932}
+
+
+affiche les caracteristiques des groupes de l\textquotesingle{}ensemble 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & \\
+\hline
+\end{DoxyParams}
+\index{groupe.\+c@{groupe.\+c}!ajouter@{ajouter}}
+\index{ajouter@{ajouter}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{ajouter(passage p, unsigned short int num)}{ajouter(passage p, unsigned short int num)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf passage} ajouter (
+\begin{DoxyParamCaption}
+\item[{{\bf passage}}]{p, }
+\item[{unsigned short int}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a17f8b4a22f4cb8659152e1136ca00e81}{}\label{groupe_8c_a17f8b4a22f4cb8659152e1136ca00e81}
+
+
+ajoute un chemin menant au chemin 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & short int la case du nouveau passage \\
+\hline
+{\em passage} & origine \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le passage créé 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!charger\+Ensemble@{charger\+Ensemble}}
+\index{charger\+Ensemble@{charger\+Ensemble}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{charger\+Ensemble(int n, char $\ast$tab, char joueur1, char joueur2, unsigned char sensj1)}{chargerEnsemble(int n, char *tab, char joueur1, char joueur2, unsigned char sensj1)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ensemble} charger\+Ensemble (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{char $\ast$}]{tab, }
+\item[{char}]{joueur1, }
+\item[{char}]{joueur2, }
+\item[{unsigned char}]{sensj1}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a1dd14cb80b217ff28945b5224dfb0d0e}{}\label{groupe_8c_a1dd14cb80b217ff28945b5224dfb0d0e}
+
+
+crée l\textquotesingle{}ensemble de largeur n à partir d\textquotesingle{}un tableau de coups 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & la largeur de l\textquotesingle{}ensemble \\
+\hline
+{\em char} & $\ast$ le tableau des coups \\
+\hline
+{\em char} & joueur1 couleur du joueur 1 \\
+\hline
+{\em char} & joueur2 couleur du joueur 2 \\
+\hline
+{\em unsigned} & char le sens dans lequel joue le joueur 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ensemble 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!copier\+Ensemble@{copier\+Ensemble}}
+\index{copier\+Ensemble@{copier\+Ensemble}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{copier\+Ensemble(ensemble e)}{copierEnsemble(ensemble e)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ensemble} copier\+Ensemble (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a3e69398d6f4fdc7af369bb4cc6ba64b6}{}\label{groupe_8c_a3e69398d6f4fdc7af369bb4cc6ba64b6}
+
+
+copie l\textquotesingle{}ensemble en parametre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & l\textquotesingle{}ensemble à copier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ensemble copie 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!cree\+Chemin\+Base@{cree\+Chemin\+Base}}
+\index{cree\+Chemin\+Base@{cree\+Chemin\+Base}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{cree\+Chemin\+Base(unsigned short int num)}{creeCheminBase(unsigned short int num)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf passage} cree\+Chemin\+Base (
+\begin{DoxyParamCaption}
+\item[{unsigned short int}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a651e2682e098907d88e5b32cef8de622}{}\label{groupe_8c_a651e2682e098907d88e5b32cef8de622}
+
+
+crée un chemin 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & short int la case du passage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le passage créé 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!creer\+Ensemble@{creer\+Ensemble}}
+\index{creer\+Ensemble@{creer\+Ensemble}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{creer\+Ensemble(int n)}{creerEnsemble(int n)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ensemble} creer\+Ensemble (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a9342f78ccadd3c08551e5f3dc55a4f3b}{}\label{groupe_8c_a9342f78ccadd3c08551e5f3dc55a4f3b}
+
+
+crée l\textquotesingle{}ensemble de largeur n vierge de tout coups 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & la largeur de l\textquotesingle{}ensemble \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ensemble 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!eval\+Ensemble\+Chemin@{eval\+Ensemble\+Chemin}}
+\index{eval\+Ensemble\+Chemin@{eval\+Ensemble\+Chemin}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{eval\+Ensemble\+Chemin(ensemble e, unsigned char afiliation, unsigned char afiautre, unsigned char sens)}{evalEnsembleChemin(ensemble e, unsigned char afiliation, unsigned char afiautre, unsigned char sens)}}]{\setlength{\rightskip}{0pt plus 5cm}int eval\+Ensemble\+Chemin (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e, }
+\item[{unsigned char}]{afiliation, }
+\item[{unsigned char}]{afiautre, }
+\item[{unsigned char}]{sens}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a9729960973a4b6f2de631fa65f337fa8}{}\label{groupe_8c_a9729960973a4b6f2de631fa65f337fa8}
+
+
+fonction d\textquotesingle{}evaluation de la valeur de l\textquotesingle{}ensemble pour la victoire d\textquotesingle{}un joueur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & l\textquotesingle{}ensemble concerné \\
+\hline
+{\em unsigned} & char la couleur du joueur \\
+\hline
+{\em unsigned} & char la couleur de son adversaire \\
+\hline
+{\em unsigned} & char le sens du joueur pour gagner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la valeur estimer du plateau 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!get\+Afiliation@{get\+Afiliation}}
+\index{get\+Afiliation@{get\+Afiliation}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{get\+Afiliation(ensemble e, int n)}{getAfiliation(ensemble e, int n)}}]{\setlength{\rightskip}{0pt plus 5cm}char get\+Afiliation (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a989a6fb2a59bc466be6c4d653987e846}{}\label{groupe_8c_a989a6fb2a59bc466be6c4d653987e846}
+
+
+getter pour l\textquotesingle{}afiliation de la case de l\textquotesingle{}ensemble 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & \\
+\hline
+{\em integer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le joueur possadant le groupe de num (integer) dans (ensemble) 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!get\+Begin\+Passage@{get\+Begin\+Passage}}
+\index{get\+Begin\+Passage@{get\+Begin\+Passage}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{get\+Begin\+Passage(passage p)}{getBeginPassage(passage p)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf passage} get\+Begin\+Passage (
+\begin{DoxyParamCaption}
+\item[{{\bf passage}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_aac0b0d0b4ca06c7be096f6a60eff7dfa}{}\label{groupe_8c_aac0b0d0b4ca06c7be096f6a60eff7dfa}
+
+
+getter pour le passage a l\textquotesingle{}origine du passage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em passage} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(passage) 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!get\+Case\+Groupe@{get\+Case\+Groupe}}
+\index{get\+Case\+Groupe@{get\+Case\+Groupe}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{get\+Case\+Groupe(ensemble e, int n)}{getCaseGroupe(ensemble e, int n)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf groupe} get\+Case\+Groupe (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_ad51c58fa88a9db5426d1fd15f7d92cc9}{}\label{groupe_8c_ad51c58fa88a9db5426d1fd15f7d92cc9}
+
+
+getter pour un groupe de l\textquotesingle{}ensemble 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & \\
+\hline
+{\em integer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le groupe de num (integer) dans (ensemble) 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!get\+Case\+Num@{get\+Case\+Num}}
+\index{get\+Case\+Num@{get\+Case\+Num}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{get\+Case\+Num(ensemble e, int i)}{getCaseNum(ensemble e, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Case\+Num (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a546022c89da758b50d97107c9cff739a}{}\label{groupe_8c_a546022c89da758b50d97107c9cff739a}
+
+
+getter pour le numero de la case de l\textquotesingle{}ensemble 
+
+
+\begin{DoxyParams}{Parameters}
+{\em integer} & \\
+\hline
+{\em ensemble} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(integer) 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!get\+N\+Case\+Passage@{get\+N\+Case\+Passage}}
+\index{get\+N\+Case\+Passage@{get\+N\+Case\+Passage}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{get\+N\+Case\+Passage(passage p)}{getNCasePassage(passage p)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short int get\+N\+Case\+Passage (
+\begin{DoxyParamCaption}
+\item[{{\bf passage}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_ae1b391f74e7499b89268e618e69f1200}{}\label{groupe_8c_ae1b391f74e7499b89268e618e69f1200}
+
+
+getter pour la case du passage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em passage} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(unsigned short integer) 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!get\+Profond@{get\+Profond}}
+\index{get\+Profond@{get\+Profond}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{get\+Profond(passage p, int n)}{getProfond(passage p, int n)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short int get\+Profond (
+\begin{DoxyParamCaption}
+\item[{{\bf passage}}]{p, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a49a93cf4c40203e29a203895e0ee2f20}{}\label{groupe_8c_a49a93cf4c40203e29a203895e0ee2f20}
+
+
+getter pour la case du passage en profondeur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em passage} & \\
+\hline
+{\em int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(unsigned short integer) 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!get\+Taille\+Ensemble@{get\+Taille\+Ensemble}}
+\index{get\+Taille\+Ensemble@{get\+Taille\+Ensemble}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{get\+Taille\+Ensemble(ensemble e)}{getTailleEnsemble(ensemble e)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Taille\+Ensemble (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_af4b26d8b4e6feb2613fff83d6ddd507b}{}\label{groupe_8c_af4b26d8b4e6feb2613fff83d6ddd507b}
+
+
+getter pour la taille de l\textquotesingle{}ensemble 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la taille de(ensemble) 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!get\+Taille\+Passage@{get\+Taille\+Passage}}
+\index{get\+Taille\+Passage@{get\+Taille\+Passage}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{get\+Taille\+Passage(passage p)}{getTaillePassage(passage p)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Taille\+Passage (
+\begin{DoxyParamCaption}
+\item[{{\bf passage}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a0429db44ab39a70557c1438b27b590bb}{}\label{groupe_8c_a0429db44ab39a70557c1438b27b590bb}
+
+
+getter pour la taille d\textquotesingle{}un passage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em passage} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(integer) 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!I\+Ade\+Pont@{I\+Ade\+Pont}}
+\index{I\+Ade\+Pont@{I\+Ade\+Pont}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{I\+Ade\+Pont(ensemble e, unsigned char afiliation, unsigned char sens)}{IAdePont(ensemble e, unsigned char afiliation, unsigned char sens)}}]{\setlength{\rightskip}{0pt plus 5cm}int I\+Ade\+Pont (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e, }
+\item[{unsigned char}]{afiliation, }
+\item[{unsigned char}]{sens}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_aa6a2af82c1eeaddd0497f1862f7bdba1}{}\label{groupe_8c_aa6a2af82c1eeaddd0497f1862f7bdba1}
+
+
+recherche de la case à jouer grace à au plus cours chemin du joueur et un étude des ponts 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & l\textquotesingle{}ensemble concerné \\
+\hline
+{\em unsigned} & char la couleur du joueur \\
+\hline
+{\em unsigned} & char le sens du joueur pour gagner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le numero de la case à jouer 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!Iasimple\+Chemin@{Iasimple\+Chemin}}
+\index{Iasimple\+Chemin@{Iasimple\+Chemin}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{Iasimple\+Chemin(ensemble e, unsigned char afiliation, unsigned char afiautre, unsigned char sens)}{IasimpleChemin(ensemble e, unsigned char afiliation, unsigned char afiautre, unsigned char sens)}}]{\setlength{\rightskip}{0pt plus 5cm}int Iasimple\+Chemin (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e, }
+\item[{unsigned char}]{afiliation, }
+\item[{unsigned char}]{afiautre, }
+\item[{unsigned char}]{sens}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a83577201cefc11d76dfdef81d60c84ad}{}\label{groupe_8c_a83577201cefc11d76dfdef81d60c84ad}
+
+
+recherche de la case à jouer grace à l\textquotesingle{}intercection des chemins les plus cours des deux joueurs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & l\textquotesingle{}ensemble concerné \\
+\hline
+{\em unsigned} & char la couleur du joueur \\
+\hline
+{\em unsigned} & char la couleur de son adversaire \\
+\hline
+{\em unsigned} & char le sens du joueur pour gagner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le numero de la case à jouer 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!Joue\+I\+Aj1mini\+Max@{Joue\+I\+Aj1mini\+Max}}
+\index{Joue\+I\+Aj1mini\+Max@{Joue\+I\+Aj1mini\+Max}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{Joue\+I\+Aj1mini\+Max(ensemble e, unsigned char j, unsigned char jsec, unsigned char sens)}{JoueIAj1miniMax(ensemble e, unsigned char j, unsigned char jsec, unsigned char sens)}}]{\setlength{\rightskip}{0pt plus 5cm}int Joue\+I\+Aj1mini\+Max (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e, }
+\item[{unsigned char}]{j, }
+\item[{unsigned char}]{jsec, }
+\item[{unsigned char}]{sens}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a565c1677c9341ec81a3c878ffbf86276}{}\label{groupe_8c_a565c1677c9341ec81a3c878ffbf86276}
+
+
+recherche de la case à jouer par le parcours de l\textquotesingle{}arbre des possibles 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & l\textquotesingle{}ensemble concerné \\
+\hline
+{\em unsigned} & char la couleur du joueur \\
+\hline
+{\em unsigned} & char la couleur de son adversaire \\
+\hline
+{\em unsigned} & char le sens du joueur pour gagner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le numero de la case à jouer 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!jouer\+Coup@{jouer\+Coup}}
+\index{jouer\+Coup@{jouer\+Coup}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{jouer\+Coup(ensemble e, unsigned short int i, unsigned char afiliation, unsigned char sens)}{jouerCoup(ensemble e, unsigned short int i, unsigned char afiliation, unsigned char sens)}}]{\setlength{\rightskip}{0pt plus 5cm}bool jouer\+Coup (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e, }
+\item[{unsigned short int}]{i, }
+\item[{unsigned char}]{afiliation, }
+\item[{unsigned char}]{sens}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a84bd97c22b65a2228be0c1f09fe2e65f}{}\label{groupe_8c_a84bd97c22b65a2228be0c1f09fe2e65f}
+
+
+permet de jouer un coup dans l\textquotesingle{}ensemble 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & sur lequel jouer \\
+\hline
+{\em unsigned} & short int le numero de la case ou l\textquotesingle{}on joue \\
+\hline
+{\em unsigned} & char la couleur du joueur \\
+\hline
+{\em unsigned} & char le sens dans il doit gagner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool le coups est gagnant 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!le\+Plus\+Court@{le\+Plus\+Court}}
+\index{le\+Plus\+Court@{le\+Plus\+Court}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{le\+Plus\+Court(ensemble e, unsigned char afiliation, unsigned char sens)}{lePlusCourt(ensemble e, unsigned char afiliation, unsigned char sens)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf passage} le\+Plus\+Court (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e, }
+\item[{unsigned char}]{afiliation, }
+\item[{unsigned char}]{sens}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a3a07ca11bbf1edfbcbbf452eb8c36b49}{}\label{groupe_8c_a3a07ca11bbf1edfbcbbf452eb8c36b49}
+
+
+cherche le chemin le plus cours 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & l\textquotesingle{}ensemble concerné \\
+\hline
+{\em unsigned} & char la couleur du joueur \\
+\hline
+{\em unsigned} & char le sens du joueur pour gagner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le chemin le plus cours 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!recherche\+Pont@{recherche\+Pont}}
+\index{recherche\+Pont@{recherche\+Pont}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{recherche\+Pont(ensemble e, unsigned short int case1, unsigned short int case2, unsigned char afiliation)}{recherchePont(ensemble e, unsigned short int case1, unsigned short int case2, unsigned char afiliation)}}]{\setlength{\rightskip}{0pt plus 5cm}bool recherche\+Pont (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e, }
+\item[{unsigned short int}]{case1, }
+\item[{unsigned short int}]{case2, }
+\item[{unsigned char}]{afiliation}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a357d3eab5255f125bd6e251b563713d9}{}\label{groupe_8c_a357d3eab5255f125bd6e251b563713d9}
+
+
+cherche la presence d\textquotesingle{}un pont en tre deux cases 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & l\textquotesingle{}ensemble concerné \\
+\hline
+{\em unsigned} & short int la case1 \\
+\hline
+{\em unsigned} & short int la case2 \\
+\hline
+{\em unsigned} & char la couleur du joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+si il y a un pont entre les deux cases 
+\end{DoxyReturn}
+\index{groupe.\+c@{groupe.\+c}!set\+Begin\+Passage@{set\+Begin\+Passage}}
+\index{set\+Begin\+Passage@{set\+Begin\+Passage}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{set\+Begin\+Passage(passage p, passage b)}{setBeginPassage(passage p, passage b)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Begin\+Passage (
+\begin{DoxyParamCaption}
+\item[{{\bf passage}}]{p, }
+\item[{{\bf passage}}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_ad2761b8a2c5a5db0af622bc8b04fcb2b}{}\label{groupe_8c_ad2761b8a2c5a5db0af622bc8b04fcb2b}
+
+
+setter pour le passage a l\textquotesingle{}origine du passage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em passage} & \\
+\hline
+{\em passage2} & \\
+\hline
+\end{DoxyParams}
+\index{groupe.\+c@{groupe.\+c}!set\+N\+Case\+Passage@{set\+N\+Case\+Passage}}
+\index{set\+N\+Case\+Passage@{set\+N\+Case\+Passage}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{set\+N\+Case\+Passage(passage p, unsigned short int i)}{setNCasePassage(passage p, unsigned short int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+N\+Case\+Passage (
+\begin{DoxyParamCaption}
+\item[{{\bf passage}}]{p, }
+\item[{unsigned short int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_afc465b84b3321b882cb1298b986f1097}{}\label{groupe_8c_afc465b84b3321b882cb1298b986f1097}
+
+
+setter pour la case du passage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em passage} & \\
+\hline
+{\em unsigned} & short int \\
+\hline
+\end{DoxyParams}
+\index{groupe.\+c@{groupe.\+c}!set\+Taille\+Passage@{set\+Taille\+Passage}}
+\index{set\+Taille\+Passage@{set\+Taille\+Passage}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{set\+Taille\+Passage(passage p, int i)}{setTaillePassage(passage p, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Taille\+Passage (
+\begin{DoxyParamCaption}
+\item[{{\bf passage}}]{p, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a55bb5dfcbaa0bbcfaf2a9ebb3257a591}{}\label{groupe_8c_a55bb5dfcbaa0bbcfaf2a9ebb3257a591}
+
+
+setter pour la taille d\textquotesingle{}un passage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em passage} & \\
+\hline
+\end{DoxyParams}
+\index{groupe.\+c@{groupe.\+c}!suprimmer\+Ensemble@{suprimmer\+Ensemble}}
+\index{suprimmer\+Ensemble@{suprimmer\+Ensemble}!groupe.\+c@{groupe.\+c}}
+\subsubsection[{\texorpdfstring{suprimmer\+Ensemble(ensemble e)}{suprimmerEnsemble(ensemble e)}}]{\setlength{\rightskip}{0pt plus 5cm}void suprimmer\+Ensemble (
+\begin{DoxyParamCaption}
+\item[{{\bf ensemble}}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{groupe_8c_a83e7a13f0c67ef8a8905d5bffe50d558}{}\label{groupe_8c_a83e7a13f0c67ef8a8905d5bffe50d558}
+
+
+supprime l\textquotesingle{}ensemble de maniere propre,bug noté 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ensemble} & l\textquotesingle{}ensemble à supprimer \\
+\hline
+\end{DoxyParams}

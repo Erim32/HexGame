@@ -1,0 +1,48 @@
+\hypertarget{_i_a_8c}{}\section{Référence du fichier Traitement\+\_\+\+C\+\_\+client/\+Groupe/\+IA.c}
+\label{_i_a_8c}\index{Traitement\+\_\+\+C\+\_\+client/\+Groupe/\+I\+A.\+c@{Traitement\+\_\+\+C\+\_\+client/\+Groupe/\+I\+A.\+c}}
+
+
+Fonctions pour la gestion du jeu sous forme de graphe +\+IA(+tard)  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}groupe.\+h\char`\"{}}\\*
+Graphe des dépendances par inclusion de I\+A.\+c\+:
+% FIG 0
+\subsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structchemin}{chemin}
+\end{DoxyCompactItemize}
+\subsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structchemin}{chemin} {\bfseries lechemin}\hypertarget{_i_a_8c_ad2671d1550c16057a49533b026984e69}{}\label{_i_a_8c_ad2671d1550c16057a49533b026984e69}
+
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries min\+Max} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, unsigned char j, unsigned char sens, unsigned char jchercheG)\hypertarget{_i_a_8c_a138bf7137e8648f40f9bf9ef179f1b2e}{}\label{_i_a_8c_a138bf7137e8648f40f9bf9ef179f1b2e}
+
+\item 
+int {\bfseries joue\+Alea} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e)\hypertarget{_i_a_8c_aa51032bd4b2a321655a5937a26817854}{}\label{_i_a_8c_aa51032bd4b2a321655a5937a26817854}
+
+\item 
+int {\bfseries Joue\+I\+Aj1mini\+Max} (\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} e, unsigned char j, unsigned char sens)\hypertarget{_i_a_8c_a10867e10c2bea40e33763fa027f686ab}{}\label{_i_a_8c_a10867e10c2bea40e33763fa027f686ab}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fonctions pour la gestion du jeu sous forme de graphe +\+IA(+tard) 
+
+\begin{DoxyAuthor}{Auteur}
+Mathieu Popquillon 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29 avril 2017 
+\end{DoxyDate}

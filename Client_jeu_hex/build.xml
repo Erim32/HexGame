@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Client_jeu_hex" default="default" basedir=".">
+    <description>Compilation et test du projet: Client_jeu_hex.</description>
+    <import file="nbproject/build-impl.xml"/>
+    
+    <copy todir="dist/musiques" >  
+        <fileset dir="musiques" includes="**"/>  
+    </copy> 
+
+    
+    
+</project>

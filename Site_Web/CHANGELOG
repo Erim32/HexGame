@@ -1,0 +1,360 @@
+
+* 2017-05-21 update .so  
+* 2017-05-21 rename bdd  
+* 2017-05-21 rename bdd  
+* 2017-05-20 Javadoc + petits fix  
+* 2017-05-20 fix curseur bouton recommencer  
+* 2017-05-20 [Java] Format code  
+* 2017-05-20 Upload new file  
+* 2017-05-20 Upload new file  
+* 2017-05-20 Upload new file a tester sur serveur sql  
+* 2017-05-20 Add new directory  
+* 2017-05-20 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-20 Auto stash before merge of &quot;master&quot; and &quot;java-v2-branche&quot;  
+* 2017-05-20 Merge branch &#39;java-v2-branche&#39;  
+* 2017-05-20 Static de merde  
+* 2017-05-20 Replace groupe.h commentaires  
+* 2017-05-20 fix item charger partie  
+* 2017-05-20 fix  selection niveau ia config  
+* 2017-05-20 [C] Doxygen inout.h; correctif warning groupe.c  
+* 2017-05-20 [C] fix IA joueur 1  
+* 2017-05-20 java -v2-alpha  
+* 2017-05-20 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-20 Replace interfaceJavaC.c ia de lv 3 faite  
+* 2017-05-20 Replace groupetest.c  
+* 2017-05-20 Replace groupe.h  
+* 2017-05-20 Replace groupe.c  
+* 2017-05-20 Clean code + fix temp fond blanc.  
+* 2017-05-19 [C] Implementation de l&#39;ia Moyen  
+* 2017-05-19 Replace groupetest.c  
+* 2017-05-19 Replace groupe.h  
+* 2017-05-19 Replace groupe.c  
+* 2017-05-19 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-19 Skynet vs BigBrother  
+* 2017-05-19 Update groupe.c  a*(b+c) c&#39;est important ()  
+* 2017-05-19 Augmentation taille messages a 20  
+* 2017-05-19 fix sauvegarde  
+* 2017-05-19 optimisation selection hex  
+* 2017-05-19 clean +fix + curseur le retour  
+* 2017-05-19 [C] Doxygen plateau.h  
+* 2017-05-19 Replace groupetest.c  
+* 2017-05-19 Replace groupe.h  
+* 2017-05-19 Replace groupe.c ia marche plus court chemin  
+* 2017-05-19 curseur main sur bouton  
+* 2017-05-19 Update .gitlab-ci.yml  
+* 2017-05-19 La chute de l * noire, le reour des x  
+* 2017-05-19 mauvais chemin generation libraries  
+* 2017-05-19 ajout de l&#39;exportation de la musique  
+* 2017-05-19 clean  
+* 2017-05-19 Explicitation dossier  
+* 2017-05-19 update a faire.txt  
+* 2017-05-19 Separation C - JAVA  
+  - Ps thomas j&#39;ai édité la generation des libraries
+* 2017-05-19 update .gitignore  
+* 2017-05-19 Gestion dossier save innexistant  
+* 2017-05-19 [Client] javadoc + clean  
+* 2017-05-19 Fix musique pour export  
+* 2017-05-19 [Launcher] build.xml generation Unix et windows en meme temps.  
+* 2017-05-18 Preparatifs implentation IA  
+* 2017-05-18 Sauvegarde, charger avec *  
+* 2017-05-18 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-18 [C] Des choses ont été faites  
+* 2017-05-18 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-18 charger ok  
+* 2017-05-18 Update plateau.h  
+* 2017-05-18 Update plateau.c  
+* 2017-05-18 Update plateau.h  
+* 2017-05-18 Update plateau.c  
+* 2017-05-18 Update plateau.c  
+* 2017-05-18 Replace IA.c  
+* 2017-05-18 [C] ajout getNbrCoup en JNI  
+* 2017-05-18 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-18 detection ok  
+* 2017-05-18 Update plateau.c inversion sens  
+* 2017-05-18 Update groupe.c Remi avait tout cassé  
+* 2017-05-18 Fix recommencer  
+* 2017-05-18 Fix affichage logs  
+* 2017-05-18 clean sauvegarder charger  
+* 2017-05-17 Desactiver bouton retour  
+* 2017-05-17 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-17 Gros push  
+* 2017-05-17 [C] fix sauvegarder + IA niveau 1  
+* 2017-05-17 [C] fix charger partie  
+* 2017-05-17 [Java / C]  Ajout getTaille dans JNI + IA.h  
+* 2017-05-17 Musique AC 8bits  
+* 2017-05-17 Dialog fin partie + a propos  
+* 2017-05-17 [JAVA] config partie affichage 2.0 beta  
+* 2017-05-17 Regles 2.0  
+* 2017-05-17 [Java] clean  
+* 2017-05-17 [JAVA] fix musique  
+* 2017-05-17 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-17 BIG PULL  
+* 2017-05-16 Update A FAIRE.TXT  
+* 2017-05-16 [C / Java] Conflit land  
+* 2017-05-16 Sauvegarde ok  
+* 2017-05-16 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-16 [Java] interfaces GUI java pour charger / sauvegarder  
+* 2017-05-16 [C] Fix JNI, ajout fonction charger dans Plateau  
+* 2017-05-16 [JAVA] fix dialog taille max  
+* 2017-05-16 update configPartie fix taille max a 15  
+* 2017-05-16 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-16 update .so  
+* 2017-05-16 [Java] recommencer partie  ok  
+  - ajout bug car inversion direction de detection des groupements
+* 2017-05-16 [C] fix valgrind groupe.c  
+* 2017-05-15 [C] fix charger JNI  
+* 2017-05-15 [Launcher] fix  
+* 2017-05-14 Upload new file IA encore non fonctionelle  
+* 2017-05-14 Replace groupe.h  
+* 2017-05-14 Replace groupe.c  
+* 2017-05-12 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-12 Makefile  
+* 2017-05-11 Replace groupetest.c charger groupe marche voir groupetest pour l&#39;implémentation  
+* 2017-05-11 Replace groupetest.c  
+* 2017-05-11 Replace groupetest.c  il n&#39;y a plus de problème pour les pairs et copier ensemble marche  
+* 2017-05-11 Replace groupe.c  
+* 2017-05-10 update .so  
+* 2017-05-09 Update groupe.c  
+* 2017-05-09 Update groupetest.c  
+* 2017-05-09 Replace groupetest.c  
+* 2017-05-09 Replace groupe.h  
+* 2017-05-09 [JNI] Mise a jour interface jni  
+* 2017-05-09 Replace groupe.c  
+* 2017-05-09 Replace groupetest.c  
+* 2017-05-08 Roulement de tambour.... V1  
+* 2017-05-08 petit fix  
+* 2017-05-08 [Java] petit fix dialog message erreur taille  
+* 2017-05-08 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-08 [Java] modification taille partie limite + dialog  
+* 2017-05-08 SO update  
+* 2017-05-08 DLL fin de partie  
+* 2017-05-08 [C] Gagnant fonctionnel; groupe/chargerEnsemble (core dumped)  
+* 2017-05-08 Update Makefile  
+* 2017-05-08 Update groupe.c  
+* 2017-05-08 Update groupe.c  
+* 2017-05-08 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-08 [Projet] build update  
+* 2017-05-08 Update groupe.c  
+* 2017-05-08 [C] Makefile pour la partie C (sauf Interface)  
+* 2017-05-07 [C] Correction  des modifications de Mathieu.  
+* 2017-05-07 [JAVA] ajout des bordures  
+* 2017-05-06 [JAVA] Taille plateau adaptation automatique  
+* 2017-05-06 [Java] Fix fautes d&#39;orthographe  
+* 2017-05-06 Add new file les changements exemple pour intégrer groupe (possible d’insérer ensemble dans la structure du tableau plus propre que variable globale)  
+* 2017-05-06 Upload new file (ligne 20 133 119) exemple pour intégration groupe  
+* 2017-05-06 Replace plateau.c changement :intégration des groupes version de base  
+* 2017-05-06 [Java] fix message partie  
+* 2017-05-06 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-06 [java] retourArriere, A modifier  
+* 2017-05-06 [JAVA] logs affichage grille  
+* 2017-05-06 [Java] fix curseur decalage  
+* 2017-05-06 [Java] library suppression logs  
+* 2017-05-06 Rebase, implementation java principal en cours. KO  
+* 2017-05-06 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-05-06 [Launcher] fermer la fenetre la apres le lancement.  
+* 2017-05-06 DLL 64  bits  
+* 2017-05-06 Dll 64 bits (normalement)  
+* 2017-05-04 [C] Sauvegarder / Charger JNI  
+* 2017-05-03 [Java] Plateau ok  
+  -  plateau ok
+  - modification taille max = 15
+* 2017-05-03 [JAVA] Premiere grille click + renameFiles + debut musique  
+   - grille OK
+   - renommage des fichiers
+  - musique ko
+* 2017-04-29 Update groupe.c minMax ajout  
+* 2017-04-29 Replace hex-documentation-technique.pdf  
+* 2017-04-29 Replace hex-documentation-technique.pdf  
+* 2017-04-29 Replace hex-documentation-technique.pdf  
+* 2017-04-29 Add new file  
+* 2017-04-29 Replace projet-informatique-de.pdf  
+* 2017-04-29 Replace projet-informatique-de.pdf  
+* 2017-04-29 Add new file  
+* 2017-04-29 Add new directory  
+* 2017-04-29 Replace groupe.c  
+* 2017-04-29 Replace groupe.h  plus propre  
+* 2017-04-27 [C] DLL  
+* 2017-04-25 [Projet] Ajout de choses a faire  
+* 2017-04-25 [JAVA] premier programme principal  
+* 2017-04-25 [C] Explicitation coup aléatoire  
+* 2017-04-25 [C] modifcation interfaceJavac  
+  - Ajout groupe.h
+  - implementation (non testé) des modules.
+  - creation d&#39;une fonction aléatoire temporaire.
+* 2017-04-25 [Java] fix config partie taille jpanel  
+* 2017-04-24 [Java] Musique ajout /!\ ne fonctionne pas /!\  
+  - erreur d&#39;arret de la musique
+* 2017-04-24 Launcher fix nom jar pour creation exe  
+* 2017-04-23 [Launcher] fix location + javadoc  
+* 2017-04-23 [C] fix test plateau  
+* 2017-04-23 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-04-23 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-04-23 [JAVA] CLient jeu hex fix, clean, javadoc  
+* 2017-04-23 [Java] Launcher v0.1  
+   - avec java doc
+* 2017-04-23 [Projet] clean  
+* 2017-04-23 Logo du jeu  
+* 2017-04-23 [Projet] Actualisation fichier &quot;A Faire&quot;  
+* 2017-04-23 [C] cette fois groupe compile &lt;3  
+* 2017-04-23 [C] essaie de correction du groupe parce que mdr ca bloque  
+* 2017-04-23 A FAIRE  
+* 2017-04-23 [C] Retour arrière  
+* 2017-04-20 Update groupe.c int unGagant(ensemble e,int sens) ajout  
+* 2017-04-19 [Java] fix premiere interface  
+* 2017-04-17 [Projet] Clean, suppression des fichiers de copilation  
+  - maj .gitignore
+* 2017-04-17 [Java] librarie dynamique gestion de l&#39;OS  
+* 2017-04-16 [Java] inclusion de la librarie dans le JAR  
+* 2017-04-16 [Java] inclusion de la police en interne au jar + Changelog  
+* 2017-04-16 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-04-16 Interface working  
+* 2017-04-15 Update groupe.c me semble marcher (testé sur 3 par 3)  en cours: jouerIA avec  X coups d&#39;avance et Ia plus court chemin +fonction gagnant à appeler direct ( int ungagnant(ensemble e) retourne 0=non 1=joueur 1 2=joueur 2  
+* 2017-04-13 [C] fix Plateau  
+  Correction formule de renvoie de getCase
+* 2017-04-13 A FAIRE  
+* 2017-04-13 [Java] ajout couleur dans coupIA  
+* 2017-04-13 [C] ajout parametre couleur pour coupIa  
+* 2017-04-13 [Java] ajout sauvegarder / charger  
+* 2017-04-12 [C] Inout v1 ok  
+* 2017-04-12 [Java] programme principal maj  
+* 2017-04-12 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-04-12 [Java - C] maj interface Java C ajout du coup IA  
+* 2017-04-11 [C] Update plateau  
+  accesseur variable aTerminer
+* 2017-04-11 [C] update plateau  
+  Accesseur tableau de coup
+* 2017-04-11 Update groupe.c  
+* 2017-04-11 Update groupe.c  
+* 2017-04-11 Update groupe.c  
+* 2017-04-11 Replace groupe.c  
+* 2017-04-11 Replace groupe.c  
+* 2017-04-10 Update README.md  
+* 2017-04-10 Update .gitignore  
+* 2017-04-10 Update README.md  
+* 2017-04-09 [Projet] fix .gitlab-ci.yml  
+* 2017-04-09 [Projet] ajout de scénarii de test de commit  
+* 2017-04-09 [C] Inout, lecture presque fini - [C] Plateau ajout d&#39;accesseurs  
+* 2017-04-08 [Java] Beta programme principal sans IA / FIN, [Projet] fix librarie  
+* 2017-04-08 [Java] Affichage v1 ok  
+* 2017-04-07 [Java] premier code d&#39;affichage de la grille  
+  - remarque caracteres aléatoires pour l&#39;instant
+* 2017-04-07 [C] accesseurs plateau, clean acces / generation .so  
+   + premieres methodes d&#39;acces
+* 2017-04-07 [C] fix groupe.c  
+* 2017-04-07 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-04-07 [C] udate plateau  
+  En tête pour doxygen
+* 2017-04-06 Fix groupe &quot;}&quot; + fix build.sh  
+* 2017-04-06 Replace groupe.c compilable et commenté pas de verification de bon fonctionement (core dumped ou fonctionement anormal)  
+* 2017-04-06 update plateau + interface  
+  plateau de coup
+* 2017-04-06 update plateau  
+* 2017-04-06 update coup parce que ca me casse les chaussures  
+* 2017-04-05 [JAVA] JNI working + fix jcombobox get value  
+* 2017-04-05 Update coup  
+* 2017-04-05 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-04-05 [JAVA] JNI IMPLEMENTATION presque OK + build  
+* 2017-04-05 fix build.sh  
+* 2017-04-05 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-04-05 Merge branch &#39;experimental&#39;  
+* 2017-04-05 .gitlab-ci.yml Version 1.0.0  
+* 2017-04-05 gitlab-ci.yml gcc + meaven ?  
+* 2017-04-05 gitlab-cli un fix de plus  
+* 2017-04-04 Update .gitlab-ci.yml  
+* 2017-04-04 [Projet] build  
+* 2017-04-04 [Scripts] Scripts de génération du projet  
+* 2017-04-04 [DOC] clean dossier  
+* 2017-04-04 [C] fix structuration du projet  
+* 2017-04-04 [C] Groupe, clean code, strucuturation du projet  
+* 2017-04-04 [C] Inout, structuration du porjet  
+* 2017-04-04 [C] Module plateau, structuration projet  
+* 2017-04-04 Replace Groupe.c  
+* 2017-04-04 [YML] desactivation des commentaires #2  
+* 2017-04-04 desactivation commentaires yml  
+* 2017-04-04 Update .gitlab-ci.yml  
+* 2017-04-04 Update gitlab-ci.yml  
+* 2017-04-04 Merge branch &#39;experimental&#39; into &#39;master&#39;  
+  Ajout controle de mise en ligne
+  
+  See merge request !1
+* 2017-04-04 Update .gitlab-ci.yml  
+* 2017-04-04 [Java] Build.xml - indépendance des libs  
+* 2017-04-04 test1  
+  ant + plateau
+* 2017-04-04 [Java] Inclusion au projet des libs  
+* 2017-03-27 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 doc cnception a modifier  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 [Projet] Ajout systeme de validation de commit  
+* 2017-03-26 Delete .gitlab-ci.yml  
+* 2017-03-26 Update .gitlab-ci.yml  
+* 2017-03-26 Delete .fuse_hidden0000029b00000001  
+* 2017-03-26 Delete gitlab-ci.yaml  
+* 2017-03-26 Merged branch master into master  
+* 2017-03-26 [Projet] Changelog et script de maj du changelog  
+* 2017-03-26 Update .gitlab-ci.yaml  
+* 2017-03-26 [JAVA] gestion des erreurs internes.  
+* 2017-03-26 [Projet] ajout verification merge  
+* 2017-03-26 [JAVA] Fix font header  
+* 2017-03-26 Update CHANGELOG  
+* 2017-03-25 Add changelog  
+* 2017-03-20 Modif plateau  
+* 2017-03-17 [GLOBAL] Restructuration du projet  
+  debut insertion jni plateau
+  suppression de .so car les liens ne fonctionnent pas dans  gitlab.
+  Remarque: Le fichier .c est dans hex src traitement
+* 2017-03-17 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-03-17 Point de sauvegarde, JNI PROF  
+* 2017-03-16 Upload new file Groupe2.c  
+* 2017-03-16 [JAVA] GUI Règles,  intéractions, encore plus modulaire  
+* 2017-03-16 [JAVA] gui hd revision + code modulaire  
+* 2017-03-16 Affichage et saisie du plateau  
+* 2017-03-16 Merge remote-tracking branch &#39;origin/master&#39;  
+* 2017-03-16 gui hd haut, bas  
+* 2017-03-15 Plateau presque casiment fini  
+* 2017-03-14 [DOC] Cahier des charges + maquette pdn + maquette v1  
+* 2017-03-14 Fix conflict  
+* 2017-03-09 Dossier de conception  
+* 2017-03-04 [Java] gui config partie + premieres intéractions  
+* 2017-03-02 Update Groupe.c v1final  
+* 2017-03-02 Update Groupe.c Fichier de type c fin soudergroupe  
+* 2017-03-02 [JAVA] gui, fix  optimisation, part 2  
+* 2017-03-02 [JAVA] GUI fix, optimisation  
+* 2017-03-02 Update Groupe.c ajout: est lien permet de tester gagnant  
+* 2017-03-02 [JAVA ] UI charger + quitter  
+* 2017-03-01 Merged branch master into master  
+* 2017-03-01 [C] preparation module inout + lecture ecriture dans un fichier  
+* 2017-03-01 Upload new file for testing like you want remi  
+* 2017-03-01 Exemple pour la gestion de fichier en c  
+* 2017-02-28 Merged branch master into master  
+* 2017-02-28 groupement  
+* 2017-02-28 Fix interactions  bouton  
+* 2017-02-28 E C F S.txt  
+  exemple de contenu pour le fichier de sauvegarde
+* 2017-02-28 Plateau  
+  hueheuee enfin
+  peut etre
+  c&#39;est pas sure
+* 2017-02-28 Merged branch patch-1 into master  
+* 2017-02-27 Plateau  
+  plateau.c
+  plateau.h
+  main.c
+  Makefile
+  TAD_Plateau.txt
+* 2017-02-27 Fichier en C pour le plateau  
+* 2017-02-25 [Java] init gui  
+* 2017-02-25 Add readme.md  

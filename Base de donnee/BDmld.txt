@@ -1,0 +1,6 @@
+mld du projet:
+
+joueur(_pseudo,email,anneeN)
+partie(_idPartie,taille,sensj1,couleurj1,couleurj2,#joueur1,#joueur2,date,gagnant)
+jouerCoup(_#pseudo,_#idpartie,_numeroCoups,lacase)
+

@@ -1,0 +1,468 @@
+\hypertarget{plateau_8h}{}\section{Traitement\+\_\+\+C\+\_\+client/\+Plateau/plateau.h File Reference}
+\label{plateau_8h}\index{Traitement\+\_\+\+C\+\_\+client/\+Plateau/plateau.\+h@{Traitement\+\_\+\+C\+\_\+client/\+Plateau/plateau.\+h}}
+
+
+Fonctions pour la gestion du plateau de jeu.  
+
+
+{\ttfamily \#include \char`\"{}../\+Groupe/groupe.\+h\char`\"{}}\\*
+Include dependency graph for plateau.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structet_plateau}{et\+Plateau} $\ast$ \hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau}\hypertarget{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{}\label{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}
+
+\begin{DoxyCompactList}\small\item\em Definiton du type abstrait de donnée plateau. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structet_coup}{et\+Coup} $\ast$ \hyperlink{plateau_8h_a7613767b26f7cf7d36e3e013d65e519c}{coup}\hypertarget{plateau_8h_a7613767b26f7cf7d36e3e013d65e519c}{}\label{plateau_8h_a7613767b26f7cf7d36e3e013d65e519c}
+
+\begin{DoxyCompactList}\small\item\em Definiton du type abstrait de donnée coup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{groupe_8h_a56928d429399ca3112579f4f3093898a}{ensemble} \hyperlink{plateau_8h_a5e76e392a991aab079492c792e14b1b0}{get\+Ensemble} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat)
+\begin{DoxyCompactList}\small\item\em Accesseur pour l\textquotesingle{}ensemble dans le plateau. \end{DoxyCompactList}\item 
+int \hyperlink{plateau_8h_ad86894f544926f8582312ae2d64243bc}{get\+Taille} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat)
+\begin{DoxyCompactList}\small\item\em Accesseur pour la taille du plateau. \end{DoxyCompactList}\item 
+char \hyperlink{plateau_8h_a6978e1a6c8651cea4e388a1853e50098}{get\+Case} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat, int x, int y)
+\begin{DoxyCompactList}\small\item\em Accesseur pour une case du plateau. \end{DoxyCompactList}\item 
+int \hyperlink{plateau_8h_acba030105f07b2a8efe5b36f38a2a11e}{get\+Nbr\+Coup} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat)
+\begin{DoxyCompactList}\small\item\em Accesseur pour le nombre de coup du plateau. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{plateau_8h_a7f127e2177a1e3d11cadec07d24e67f2}{get\+Historique\+Coup} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat, int numero\+Coup)
+\begin{DoxyCompactList}\small\item\em Accesseur pour una case du plateau. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{plateau_8h_adb3246758ba0cdd27cfd6916e1fb5c75}{get\+Grille} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat)
+\begin{DoxyCompactList}\small\item\em Accesseur pour la grille du plateau. \end{DoxyCompactList}\item 
+\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} \hyperlink{plateau_8h_a69d5f0825696896b37c56a56e4eb3f57}{set\+Grille} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat, char $\ast$grille)
+\begin{DoxyCompactList}\small\item\em Ajoute une grille au plateau. \end{DoxyCompactList}\item 
+\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} \hyperlink{plateau_8h_a4b65cdce876191fd9bf220371e78203b}{ajouter\+Historique\+Coups} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat, char couleur, int ligne, int colonne)
+\begin{DoxyCompactList}\small\item\em Ajoute d\textquotesingle{}une ligne dans l\textquotesingle{}historique des coup. \end{DoxyCompactList}\item 
+\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} \hyperlink{plateau_8h_add2f20b98b80eb9378e3cc20f985b71d}{creer\+Plateau} (int n)
+\begin{DoxyCompactList}\small\item\em Creer un plateau. \end{DoxyCompactList}\item 
+int \hyperlink{plateau_8h_a0e2065d7c6ffbd5ccb396584bd9d9b29}{vainqueur} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat)
+\begin{DoxyCompactList}\small\item\em Accesseur pour l\textquotesingle{}entier A\+Terminer du plateau. \end{DoxyCompactList}\item 
+void \hyperlink{plateau_8h_a0fd3590e877af904b55327c0d2ee691d}{jouer} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat, char couleur, int ligne, int colonne)
+\begin{DoxyCompactList}\small\item\em Joue un coup par le joueur couleur a la case de coordonnées (x;y) du plateau, dans l\textquotesingle{}ensemble et dans l\textquotesingle{}historique des coups. \end{DoxyCompactList}\item 
+\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} \hyperlink{plateau_8h_afc4806ff865b84d88442cc6f63cac403}{placer\+Pion} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat, char couleur, int ligne, int colonne)
+\begin{DoxyCompactList}\small\item\em Joue un coup par le joueur couleur a la case de coordonnées (x;y) du plateau. \end{DoxyCompactList}\item 
+\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} \hyperlink{plateau_8h_aad6e926d2c5a8ff2b66bc34870f90dd1}{initialiser\+Plateau} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat)
+\begin{DoxyCompactList}\small\item\em Initialise toutes les cases du plateau a vide (caractère \textquotesingle{}.\textquotesingle{}) \end{DoxyCompactList}\item 
+\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} \hyperlink{plateau_8h_ad75f58d14522da3a3cfea4f00c1fe314}{retour\+Arriere} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat)
+\begin{DoxyCompactList}\small\item\em Effetue un retour arrière sur le plateau et sur l\textquotesingle{}ensemble du plateau. \end{DoxyCompactList}\item 
+void \hyperlink{plateau_8h_ae307b619ee51bdb036a21c5d1c7ce876}{supprimer\+Plateau} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat)
+\begin{DoxyCompactList}\small\item\em Libère les espaces mémoires utlisés par la plateau. \end{DoxyCompactList}\item 
+\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} \hyperlink{plateau_8h_a701c7d3fd1009db0f72f6b2edbc28da9}{charger\+Plateau} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat, const char $\ast$fich)
+\begin{DoxyCompactList}\small\item\em Charge un plateau à partir d\textquotesingle{}un fichier. \end{DoxyCompactList}\item 
+int \hyperlink{plateau_8h_acc7f72076cf5da6eacb1a866b05d42fe}{case\+Vide} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat, int ligne, int colonne)
+\begin{DoxyCompactList}\small\item\em Test si la case aux coordonnées (ligne;colonne) est vide. \end{DoxyCompactList}\item 
+void \hyperlink{plateau_8h_ade25d2e50fcc31ebcd21b90f9d190d98}{saisie} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat, char couleur)
+\begin{DoxyCompactList}\small\item\em Fonction de test pour la saisie d\textquotesingle{}un coup dans le plateau. \end{DoxyCompactList}\item 
+void \hyperlink{plateau_8h_abccae1127138d1355e40cd2d3a2285a6}{affichage} (\hyperlink{plateau_8h_a4c2291e368c7dc27e66e0db8833c25cd}{plateau} plat)
+\begin{DoxyCompactList}\small\item\em Fonction de test pour l\textquotesingle{}affichage du plateau plateau. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fonctions pour la gestion du plateau de jeu. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Lyle 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+19 mai 2017 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{plateau.\+h@{plateau.\+h}!affichage@{affichage}}
+\index{affichage@{affichage}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{affichage(plateau plat)}{affichage(plateau plat)}}]{\setlength{\rightskip}{0pt plus 5cm}void affichage (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_abccae1127138d1355e40cd2d3a2285a6}{}\label{plateau_8h_abccae1127138d1355e40cd2d3a2285a6}
+
+
+Fonction de test pour l\textquotesingle{}affichage du plateau plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+\end{DoxyParams}
+\index{plateau.\+h@{plateau.\+h}!ajouter\+Historique\+Coups@{ajouter\+Historique\+Coups}}
+\index{ajouter\+Historique\+Coups@{ajouter\+Historique\+Coups}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{ajouter\+Historique\+Coups(plateau plat, char couleur, int ligne, int colonne)}{ajouterHistoriqueCoups(plateau plat, char couleur, int ligne, int colonne)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plateau} ajouter\+Historique\+Coups (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat, }
+\item[{char}]{couleur, }
+\item[{int}]{ligne, }
+\item[{int}]{colonne}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_a4b65cdce876191fd9bf220371e78203b}{}\label{plateau_8h_a4b65cdce876191fd9bf220371e78203b}
+
+
+Ajoute d\textquotesingle{}une ligne dans l\textquotesingle{}historique des coup. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+{\em caractère} & pour la couleur du joueur \\
+\hline
+{\em deux} & entiers pour les coordonnées \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un plateau avec un historique des coups modifiés 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!case\+Vide@{case\+Vide}}
+\index{case\+Vide@{case\+Vide}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{case\+Vide(plateau plat, int ligne, int colonne)}{caseVide(plateau plat, int ligne, int colonne)}}]{\setlength{\rightskip}{0pt plus 5cm}int case\+Vide (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat, }
+\item[{int}]{ligne, }
+\item[{int}]{colonne}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_acc7f72076cf5da6eacb1a866b05d42fe}{}\label{plateau_8h_acc7f72076cf5da6eacb1a866b05d42fe}
+
+
+Test si la case aux coordonnées (ligne;colonne) est vide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+{\em deux} & entiers pour les coordonnées de la case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si la case est vide, 0 sinon 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!charger\+Plateau@{charger\+Plateau}}
+\index{charger\+Plateau@{charger\+Plateau}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{charger\+Plateau(plateau plat, const char $\ast$fich)}{chargerPlateau(plateau plat, const char *fich)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plateau} charger\+Plateau (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat, }
+\item[{const char $\ast$}]{fich}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_a701c7d3fd1009db0f72f6b2edbc28da9}{}\label{plateau_8h_a701c7d3fd1009db0f72f6b2edbc28da9}
+
+
+Charge un plateau à partir d\textquotesingle{}un fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+{\em une} & chaine de caractère pour le chemin du fichier à charger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un plateau correctement chargé 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!creer\+Plateau@{creer\+Plateau}}
+\index{creer\+Plateau@{creer\+Plateau}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{creer\+Plateau(int n)}{creerPlateau(int n)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plateau} creer\+Plateau (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_add2f20b98b80eb9378e3cc20f985b71d}{}\label{plateau_8h_add2f20b98b80eb9378e3cc20f985b71d}
+
+
+Creer un plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+{\em entier} & pour la largeur de la grille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un plateau correctement créé 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!get\+Case@{get\+Case}}
+\index{get\+Case@{get\+Case}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{get\+Case(plateau plat, int x, int y)}{getCase(plateau plat, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}char get\+Case (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_a6978e1a6c8651cea4e388a1853e50098}{}\label{plateau_8h_a6978e1a6c8651cea4e388a1853e50098}
+
+
+Accesseur pour une case du plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+{\em deux} & entiers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la case de coordonnées (x;y) du plateau 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!get\+Ensemble@{get\+Ensemble}}
+\index{get\+Ensemble@{get\+Ensemble}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{get\+Ensemble(plateau plat)}{getEnsemble(plateau plat)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ensemble} get\+Ensemble (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_a5e76e392a991aab079492c792e14b1b0}{}\label{plateau_8h_a5e76e392a991aab079492c792e14b1b0}
+
+
+Accesseur pour l\textquotesingle{}ensemble dans le plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}ensemble du plateau 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!get\+Grille@{get\+Grille}}
+\index{get\+Grille@{get\+Grille}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{get\+Grille(plateau plat)}{getGrille(plateau plat)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\+Grille (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_adb3246758ba0cdd27cfd6916e1fb5c75}{}\label{plateau_8h_adb3246758ba0cdd27cfd6916e1fb5c75}
+
+
+Accesseur pour la grille du plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la grille du plateau 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!get\+Historique\+Coup@{get\+Historique\+Coup}}
+\index{get\+Historique\+Coup@{get\+Historique\+Coup}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{get\+Historique\+Coup(plateau plat, int numero\+Coup)}{getHistoriqueCoup(plateau plat, int numeroCoup)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\+Historique\+Coup (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat, }
+\item[{int}]{numero\+Coup}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_a7f127e2177a1e3d11cadec07d24e67f2}{}\label{plateau_8h_a7f127e2177a1e3d11cadec07d24e67f2}
+
+
+Accesseur pour una case du plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+{\em entier} & pour le numero du coup \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une chaine de caractère avec le joueur et les coordonnées de la case 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!get\+Nbr\+Coup@{get\+Nbr\+Coup}}
+\index{get\+Nbr\+Coup@{get\+Nbr\+Coup}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{get\+Nbr\+Coup(plateau plat)}{getNbrCoup(plateau plat)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Nbr\+Coup (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_acba030105f07b2a8efe5b36f38a2a11e}{}\label{plateau_8h_acba030105f07b2a8efe5b36f38a2a11e}
+
+
+Accesseur pour le nombre de coup du plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le nombre de coup du plateau 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!get\+Taille@{get\+Taille}}
+\index{get\+Taille@{get\+Taille}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{get\+Taille(plateau plat)}{getTaille(plateau plat)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Taille (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_ad86894f544926f8582312ae2d64243bc}{}\label{plateau_8h_ad86894f544926f8582312ae2d64243bc}
+
+
+Accesseur pour la taille du plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la taille du plateau 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!initialiser\+Plateau@{initialiser\+Plateau}}
+\index{initialiser\+Plateau@{initialiser\+Plateau}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{initialiser\+Plateau(plateau plat)}{initialiserPlateau(plateau plat)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plateau} initialiser\+Plateau (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_aad6e926d2c5a8ff2b66bc34870f90dd1}{}\label{plateau_8h_aad6e926d2c5a8ff2b66bc34870f90dd1}
+
+
+Initialise toutes les cases du plateau a vide (caractère \textquotesingle{}.\textquotesingle{}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un plateau correctement initialisé 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!jouer@{jouer}}
+\index{jouer@{jouer}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{jouer(plateau plat, char couleur, int ligne, int colonne)}{jouer(plateau plat, char couleur, int ligne, int colonne)}}]{\setlength{\rightskip}{0pt plus 5cm}void jouer (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat, }
+\item[{char}]{couleur, }
+\item[{int}]{ligne, }
+\item[{int}]{colonne}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_a0fd3590e877af904b55327c0d2ee691d}{}\label{plateau_8h_a0fd3590e877af904b55327c0d2ee691d}
+
+
+Joue un coup par le joueur couleur a la case de coordonnées (x;y) du plateau, dans l\textquotesingle{}ensemble et dans l\textquotesingle{}historique des coups. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+{\em character} & pour la couleur du joueur \\
+\hline
+{\em deux} & entier pour les coordonnées de la case \\
+\hline
+\end{DoxyParams}
+\index{plateau.\+h@{plateau.\+h}!placer\+Pion@{placer\+Pion}}
+\index{placer\+Pion@{placer\+Pion}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{placer\+Pion(plateau plat, char couleur, int ligne, int colonne)}{placerPion(plateau plat, char couleur, int ligne, int colonne)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plateau} placer\+Pion (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat, }
+\item[{char}]{couleur, }
+\item[{int}]{ligne, }
+\item[{int}]{colonne}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_afc4806ff865b84d88442cc6f63cac403}{}\label{plateau_8h_afc4806ff865b84d88442cc6f63cac403}
+
+
+Joue un coup par le joueur couleur a la case de coordonnées (x;y) du plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+{\em character} & pour la couleur du joueur \\
+\hline
+{\em deux} & entier pour les coordonnées de la case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le plateau avec le pion correctement placé 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!retour\+Arriere@{retour\+Arriere}}
+\index{retour\+Arriere@{retour\+Arriere}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{retour\+Arriere(plateau plat)}{retourArriere(plateau plat)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plateau} retour\+Arriere (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_ad75f58d14522da3a3cfea4f00c1fe314}{}\label{plateau_8h_ad75f58d14522da3a3cfea4f00c1fe314}
+
+
+Effetue un retour arrière sur le plateau et sur l\textquotesingle{}ensemble du plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un plateau a l\textquotesingle{}état précédant le dernier coup 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!saisie@{saisie}}
+\index{saisie@{saisie}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{saisie(plateau plat, char couleur)}{saisie(plateau plat, char couleur)}}]{\setlength{\rightskip}{0pt plus 5cm}void saisie (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat, }
+\item[{char}]{couleur}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_ade25d2e50fcc31ebcd21b90f9d190d98}{}\label{plateau_8h_ade25d2e50fcc31ebcd21b90f9d190d98}
+
+
+Fonction de test pour la saisie d\textquotesingle{}un coup dans le plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+{\em un} & caractère pour la couleur du joueur \\
+\hline
+\end{DoxyParams}
+\index{plateau.\+h@{plateau.\+h}!set\+Grille@{set\+Grille}}
+\index{set\+Grille@{set\+Grille}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{set\+Grille(plateau plat, char $\ast$grille)}{setGrille(plateau plat, char *grille)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plateau} set\+Grille (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat, }
+\item[{char $\ast$}]{grille}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_a69d5f0825696896b37c56a56e4eb3f57}{}\label{plateau_8h_a69d5f0825696896b37c56a56e4eb3f57}
+
+
+Ajoute une grille au plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+{\em chaine} & de caractère \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un plateau avec une grille 
+\end{DoxyReturn}
+\index{plateau.\+h@{plateau.\+h}!supprimer\+Plateau@{supprimer\+Plateau}}
+\index{supprimer\+Plateau@{supprimer\+Plateau}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{supprimer\+Plateau(plateau plat)}{supprimerPlateau(plateau plat)}}]{\setlength{\rightskip}{0pt plus 5cm}void supprimer\+Plateau (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_ae307b619ee51bdb036a21c5d1c7ce876}{}\label{plateau_8h_ae307b619ee51bdb036a21c5d1c7ce876}
+
+
+Libère les espaces mémoires utlisés par la plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+\end{DoxyParams}
+\index{plateau.\+h@{plateau.\+h}!vainqueur@{vainqueur}}
+\index{vainqueur@{vainqueur}!plateau.\+h@{plateau.\+h}}
+\subsubsection[{\texorpdfstring{vainqueur(plateau plat)}{vainqueur(plateau plat)}}]{\setlength{\rightskip}{0pt plus 5cm}int vainqueur (
+\begin{DoxyParamCaption}
+\item[{{\bf plateau}}]{plat}
+\end{DoxyParamCaption}
+)}\hypertarget{plateau_8h_a0e2065d7c6ffbd5ccb396584bd9d9b29}{}\label{plateau_8h_a0e2065d7c6ffbd5ccb396584bd9d9b29}
+
+
+Accesseur pour l\textquotesingle{}entier A\+Terminer du plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plateau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}entier pour savoir si la partie est terminée 
+\end{DoxyReturn}
